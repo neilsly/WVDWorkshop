@@ -1,16 +1,4 @@
-**Contents**
-
-<!-- TOC -->
-
-- [Implementing Windows Virtual Desktop in the enterprise before the hands-on lab setup guide](#implementing-windows-virtual-desktop-in-the-enterprise-before-the-hands-on-lab-setup-guide)
-    - [Requirements](#requirements)
-    - [Before the hands-on lab](#before-the-hands-on-lab)
-        - [Task 1: Deploying Azure Infrastructure and AD DS](#task-1-deploying-azure-infrastructure-and-ad-ds)
-        - [Task 2: Deploying the ARM template](#task-2-deploying-the-arm-template)
-
-<!-- /TOC -->
-
-# Implementing Windows Virtual Desktop in the enterprise before the hands-on lab setup guide
+# Step 1: Deploying Azure Infrastrucure and AD DS
 
 ## Requirements
 
@@ -104,4 +92,4 @@ deployment. To avoid confusion and deployment errors, **open an InPrivate browse
 
     Once the ARM template is done being deployed, the status will change to complete. At this point the domain controller is ready for RDP connectivity.
 
-You should follow all steps provided *before* performing the Hands-on lab.
+
