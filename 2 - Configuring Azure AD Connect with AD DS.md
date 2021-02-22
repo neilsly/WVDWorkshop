@@ -25,17 +25,17 @@ In this exercise you will be configuring [Azure AD Connect](https://docs.microso
 
 4. On the Infra Resource group blade, review the list of available resources. Locate the resource named **AdPubIP1** and Select on it. Note that the resource type should be **Public IP address**.
 
-   ![Find the public IP address for the domain controller VM](/Users/neil/Documents/GitHub/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/Hands-on lab/images/publicip.png "Public IP address for Domain Controller VM")
+   ![Find the public IP address for the domain controller VM](images/publicip.png "Public IP address for Domain Controller VM")
 
 5. On the Overview page for AdPubIP1, locate the **IP address** field. Copy the IP address to a safe location.
 
 6. On your local machine, open the **RUN** dialog window, type **MSTSC** and hit enter.
 
-   ![Open the Run dialog window to run MSTSC](/Users/neil/Documents/GitHub/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/Hands-on lab/images/run.png "Run on Windows") 
+   ![Open the Run dialog window to run MSTSC](images/run.png "Run on Windows") 
 
 7. In the **Remote Desktop Connection** window, paste in the public IP address from the previous step. Select **Connect**.
 
-   ![The Window for Remote Desktop Connection will open to enter the public IP address for the domain controller VM.](/Users/neil/Documents/GitHub/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/Hands-on lab/images/remoteDesktop.png "Window for Remote Desktop Connection") 
+   ![The Window for Remote Desktop Connection will open to enter the public IP address for the domain controller VM.](images/remoteDesktop.png "Window for Remote Desktop Connection") 
 
 8. When prompted, sign in with the AD domain UPN credentials. For example, if you used the ARM template from step 1, the credentials will be something along the lines of: [adadmin\@MyADDomain.com](mailto:adadmin@MyADDomain.com) with the password you specified whlie deploying the teamplte. If prompted, Select **Yes** to accept the RDP certification warning.
 
@@ -51,11 +51,11 @@ In an effort to simplify tasks in this lab, we will start by disabling [IE Enhan
 
 3. Locate the **IE Enhanced Security Configuration** option and Select **On**.
 
-   ![Within the Local Server properties in server manager, locate Enhanced Security configuration.](/Users/neil/Documents/GitHub/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/Hands-on lab/images/IEESC.png "Local Server properties within server manager") 
+   ![Within the Local Server properties in server manager, locate Enhanced Security configuration.](images/IEESC.png "Local Server properties within server manager") 
 
 4. On the Internet Explorer Enhanced Security Configuration window, under **Administrators**, select the **Off** radio button and Select **OK**.
 
-   ![When you select the current configuration, a new window will open that will allow you to disable the enhanced security configuration.](/Users/neil/Documents/GitHub/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/Hands-on lab/images/disablesecurity.png "Disable enhanced security configuration")
+   ![When you select the current configuration, a new window will open that will allow you to disable the enhanced security configuration.](images/disablesecurity.png "Disable enhanced security configuration")
 
 ### Task 3: Creating a domain admin account
 
@@ -63,15 +63,15 @@ By default, Azure AD Connect does not synchronize the built-in domain administra
 
 1. In Server Manager, Select **Tools** in the upper right corner and select **Active Directory Users and Computers**.
 
-   ![Find Tools on the uppert right corner to access the Server Manager Tools.](/Users/neil/Documents/GitHub/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/Hands-on lab/images/serverMangerTools.png "Server Manager Tools") 
+   ![Find Tools on the uppert right corner to access the Server Manager Tools.](images/serverMangerTools.png "Server Manager Tools") 
 
 2. In Active Directory Users and Computers, right-click the **Users** organization unit and select **New \> User** from the menu.
 
-   ![Find the folder path for users, and right-click to add a new user](/Users/neil/Documents/GitHub/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/Hands-on lab/images/newUser.png "Folder path for new user") 
+   ![Find the folder path for users, and right-click to add a new user](images/newUser.png "Folder path for new user") 
 
 3. Complete the New User wizard.
 
-   ![A window will open with the fields to complete for a new user.](/Users/neil/Documents/GitHub/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/Hands-on lab/images/newuserobject.png "Create a new user")
+   ![A window will open with the fields to complete for a new user.](images/newuserobject.png "Create a new user")
 
 
     ![The next window will allow you to assign a password.](images/newUserWizard.png "New User Wizard window") 
@@ -82,46 +82,46 @@ By default, Azure AD Connect does not synchronize the built-in domain administra
 
 4. In Active Directory Users and Computers, right-click on the new user account object and select **Add to a group**.
 
-   ![When the new user is created, we will find that user name and right-click to add the user to a group.](/Users/neil/Documents/GitHub/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/Hands-on lab/images/addusertogroup.png "Add new user to a group")
+   ![When the new user is created, we will find that user name and right-click to add the user to a group.](images/addusertogroup.png "Add new user to a group")
 
 5. On the Select Groups dialog window, type **Domain Admins** and Select **OK**.
 
    >**Note**: This account will be used during the host pool creation process for joining the hosts to the domain. Granting Domain Admin permissions will simplify the lab. However, any Active Directory account that has the following permissions will suffice. This can be done using [Active Directory Delegate Control](https://danielengberg.com/domain-join-permissions-delegate-active-directory/). 
 
-   ![In the next window, we will add this user to the Domain Admins group.](/Users/neil/Documents/GitHub/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/Hands-on lab/images/addusertodomainadmins.png "Add user to Domain Admins group")
+   ![In the next window, we will add this user to the Domain Admins group.](images/addusertodomainadmins.png "Add user to Domain Admins group")
 
 ### Task 4: Configuring Azure AD Connect
 
 1. On the desktop of the domain controller, locate the icon for **Azure AD Connect** and open it.
 
-   ![Find the Azure AD Connect icon on the Domain controller VM desktop.](/Users/neil/Documents/GitHub/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/Hands-on lab/images/azureadconnect.png "Azure AD Connect desktop icon")
+   ![Find the Azure AD Connect icon on the Domain controller VM desktop.](images/azureadconnect.png "Azure AD Connect desktop icon")
 
 2. Accept the license terms and privacy notice, then select continue. On the next screen select **Use express settings**. The required components will install.
 
-   ![This will take you to the Azure AD connect set up screen.](/Users/neil/Documents/GitHub/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/Hands-on lab/images/AzureADconnectExpressSetting.png "Azure AD connect set up screen") 
+   ![This will take you to the Azure AD connect set up screen.](images/AzureADconnectExpressSetting.png "Azure AD connect set up screen") 
 
 3. On the Connect to Azure AD page, enter in the Azure AD Global Admin credentials. For example: [azadmin\@MyAADdomain.onmicrosoft.com](mailto:azadmin@MyAADdomain.onmicrosoft.com) and the correct password. Select **Next**.
 
-   ![After selecting "Use express settings", the next window will require you to enter your Azure Active Directory username and password.](/Users/neil/Documents/GitHub/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/Hands-on lab/images/adconnectazuresub.png "Azure AD Connect - Azure AD login")
+   ![After selecting "Use express settings", the next window will require you to enter your Azure Active Directory username and password.](images/adconnectazuresub.png "Azure AD Connect - Azure AD login")
 
    >**Note**: This is the account associated with your Azure subscription.
 
 4. On the Connect to AD DS page, enter in the Active Directory credentials for a Domain Admin account. For example, if you used the ARM template deployment for the domain controller, the credentials will be something along the lines of: **[[MyADDomain.com]](http://myaddomain.com/) \\ADadmin** using the password you specified whlie deploying the teamplte. Select **Next**.
 
-   ![In the next window, enter the AD DS domain and admin username and password.](/Users/neil/Documents/GitHub/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/Hands-on lab/images/azureadconnectdclogin.png "Azure AD Connect - Domain login")
+   ![In the next window, enter the AD DS domain and admin username and password.](images/azureadconnectdclogin.png "Azure AD Connect - Domain login")
 
    >**Note**: If you copy and paste the password, please ensure that there are no trailing spaces, as that will cause the verification to fail.
 
 5. Select **Install** to start the configuration and synchronization.
 
-   ![In the next window, select the box to continue without matching all UPN suffixes and select next to continue.](/Users/neil/Documents/GitHub/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/Hands-on lab/images/azureadsigninconfig.png "Azure AD sign-in configuration")
+   ![In the next window, select the box to continue without matching all UPN suffixes and select next to continue.](images/azureadsigninconfig.png "Azure AD sign-in configuration")
 
-   ![In the final setup window, select the box to start the synchronization process and select install.](/Users/neil/Documents/GitHub/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/Hands-on lab/images/azureadready.png "Azure AD Connect Ready to configure")
+   ![In the final setup window, select the box to start the synchronization process and select install.](images/azureadready.png "Azure AD Connect Ready to configure")
 
 6. After a few minutes the Azure AD Connect installation will complete.
    Select **Exit**.
 
-   ![Once installation is complete the Configuration complete window will be present.](/Users/neil/Documents/GitHub/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/Hands-on lab/images/AADCcomplete.png "The Configuration is completed window")
+   ![Once installation is complete the Configuration complete window will be present.](images/AADCcomplete.png "The Configuration is completed window")
 
 7. Minimize the RDP session for the domain controller and wait a few minutes for the AD accounts to be synchronized to Azure AD.
 
@@ -133,7 +133,7 @@ By default, Azure AD Connect does not synchronize the built-in domain administra
 
 11. Review the list of user account objects and confirm the test accounts have synchronized.  
 
-    ![This image shows the list of users that you should see in Azure Active Directory that were synchronized from Active Directory with Azure AD Connect](/Users/neil/Documents/GitHub/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/Hands-on lab/images/adconnectsync.png "Synchronized users list")
+    ![This image shows the list of users that you should see in Azure Active Directory that were synchronized from Active Directory with Azure AD Connect](images/adconnectsync.png "Synchronized users list")
 
     >**Note**: It can take up to 15 minutes for the Active Directory objects to be synchronized to the Azure AD tenant.
 
