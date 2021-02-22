@@ -1,4 +1,4 @@
-**Exercise 4: Create a master image for WVD**
+**Exercise 4: Create a master image for WVD (Part 1)**
 
 Duration: 90 minutes
 

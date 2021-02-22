@@ -1,83 +1,98 @@
-\10. After the script has completed, select the Window start icon and note that Office, Microsoft Edge Chromium, and Microsoft Teams have been installed.
+**Exercise 4: Create a master image for WVD (Part 2)**
 
-[![Here you can view the newly installed applications.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png)](images/newapplications.png)
+Duration: 90 minutes
 
-\11. Once the script has completed execution, complete these final tasks:
+In this exercise we are going to walk through the process of creating a master image for your WVD host pools. The basic concept for a master image is to start with a clean base install of Windows and layer on mandatory updates, applications and configurations. There are many ways to create and manage images for WVD. The steps covered in this exercise are going to walk you through a basic build and capture process that includes core applications and recommended configuration options for WVD.
 
-·    Delete the C:\BuildArtifacts directory.
+**Additional Resources**
 
-·    Delete the .zip file on your desktop.
+|                                                              |                                                              |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Description                                                  | Links                                                        |
+| Create a managed image of a generalized VM  in Azure         | https://docs.microsoft.com/en-us/azure/virtual-machines/windows/capture-image-resource |
+| For more information on how to deploy a  virtual machine in Azure | https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal |
+| For more information on how to setup a  Bastion host in Azure | https://docs.microsoft.com/en-us/azure/bastion/bastion-create-host-portal |
+|                                                              |    
 
-·    Empty the Recycle Bin.
+1. After the script has completed, select the Window start icon and note that Office, Microsoft Edge Chromium, and Microsoft Teams have been installed.
 
-·    Copy the C:\Windows\Logs\ImagePrep\LGPO directory to your local workstation.
+       ![Here you can view the newly installed applications.](images/newapplications.png)
 
-·    Reboot the VM.
+2. Once the script has completed execution, complete these final tasks:
 
-[![After the image preparation is complete, delete the downloaded files and empty the recycle bin](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png)](images/deletescripts.png)
+- Delete the C:\\BuildArtifacts directory.
 
-[![Navigate to the Windows start menu and reboot the Windows 10 VM.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image005.png)](images/win10reboot.png)
+- Delete the .zip file on your desktop.
 
-### Task 4: Run Sysprep
+- Empty the Recycle Bin.
 
-\1.   After the VM has rebooted, reconnect your RDP session and sign in.
+- Copy the C:\\Windows\\Logs\\ImagePrep\\LGPO directory to your local workstation.
 
-\2.   Open an administrative command prompt.
+- Reboot the VM.
 
-\3.   Navigate to: **C:\Windows\System32\Sysprep**.
+     ![After the image preparation is complete, delete the downloaded files and empty the recycle bin](images/deletescripts.png)
 
-```
-4.  cd C:\Windows\System32\Sysprep
-```
+     ![Navigate to the Windows start menu and reboot the Windows 10 VM.](images/win10reboot.png)
 
-\5.   Run the following command to sysprep the VM and shutdown:
+### Task 2: Run Sysprep
 
-```
-6.  sysprep.exe /oobe /generalize /shutdown
-```
+1. After the VM has rebooted, reconnect your RDP session and sign in.
+
+2. Open an administrative command prompt.
+
+3. Navigate to: **C:\\Windows\\System32\\Sysprep**.
+
+   ```
+   cd C:\Windows\System32\Sysprep
+   ```
+
+4. Run the following command to sysprep the VM and shutdown:
+
+   ```
+   sysprep.exe /oobe /generalize /shutdown
+   ```
 
 The system will automatically shut down and disconnect your RDP session.
 
-### Task 5: Create a managed image from the Master Image VM
+### Task 3: Create a managed image from the Master Image VM
 
-\1.   Sign in to the [Azure Portal](https://portal.azure.com/).
+1. Sign in to the [Azure Portal](https://portal.azure.com/).
 
-\2.   At the top of the page, in the **Search resources** field, type **virtual machines**. Select **Virtual machines** from the list.
+2. At the top of the page, in the **Search resources** field, type **virtual machines**. Select **Virtual machines** from the list.
 
-[![From the Azure portal search bar, search for virtual machines and select the service.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png)](images/searchvm.png)
+   ![From the Azure portal search bar, search for virtual machines and select the service.](images/searchvm.png "Search Virtual Machines")
 
-\3.   On the Virtual machines blade, locate the VM you used for your master image and **Select** on the name.
+3. On the Virtual machines blade, locate the VM you used for your master image and **Select** on the name.
 
-\4.   On the Overview blade for your VM, confirm the **Status** shows **Stopped**. Select **Stop** in the menu bar to move it to a deallocated state.
+4. On the Overview blade for your VM, confirm the **Status** shows **Stopped**. Select **Stop** in the menu bar to move it to a deallocated state.
 
-[![This is what you will see if the VM is running.  Please select stop to deallocate the VM.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image008.png)](images/vmrunning.png)
+   ![This is what you will see if the VM is running.  Please select stop to deallocate the VM.](images/vmrunning.png)
 
-[![When the VM has been stopped, it will show the status of stopped, deallocated.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image010.png)](images/vmstopped.png)
+   ![When the VM has been stopped, it will show the status of stopped, deallocated.](images/vmstopped.png)
 
-\5.   Once complete, Select **Capture** in the menu bar.
+5. Once complete, Select **Capture** in the menu bar.
 
-[![Once the VM is stopped, you can select capture to capture the VM image.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image012.png)](images/vmcapture.png)
+   ![Once the VM is stopped, you can select capture to capture the VM image.](images/vmcapture.png)
 
-\6.   On the Create image blade, fill in the required fields and Select **Create**.
+6. On the Create image blade, fill in the required fields and Select **Create**.
 
-[![This will display the Create Image blade in Azure.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image014.png)](images/w10VMImage.png)
+   ![This will display the Create Image blade in Azure.](images/w10VMImage.png "Create Image blade in Azure")
 
-\7.   Once complete, type **images** in the **Search resources field** at the top of the page. Select **Images** from the list.
+7. Once complete, type **images** in the **Search resources field** at the top of the page. Select **Images** from the list.
 
-\8.   On the Images blade, locate your image and **Select** on the name.
+8. On the Images blade, locate your image and **Select** on the name.
 
-[![When you search on images, this is the icon that you will need to select.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image015.png)](images/findimage.png)
+   ![When you search on images, this is the icon that you will need to select.](images/findimage.png)
 
-\9.   On the Overview blade for your image, make note of the **Name** field and **Resource group** field. These attributes are needed when you provision your host pools.
+9. On the Overview blade for your image, make note of the **Name** field and **Resource group** field. These attributes are needed when you provision your host pools.
 
-[![This is the information that you need to note for the name and resource group.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image017.png)](images/newimage.png)
+   ![This is the information that you need to note for the name and resource group.](images/newimage.png)
 
-### Task 6: Provision a Host Pool with a custom image
+### Task 4: Provision a Host Pool with a custom image
 
-\1.   To start provisioning a host pool with your custom image, follow the instructions in [Exercise 6](HOL step-by-step - Implementing Windows Virtual Desktop in the enterprise.md#exercise-6-create-a-host-pool-and-assign-pooled-remote-apps).
+1. To start provisioning a host pool with your custom image, follow the instructions in [Exercise 6](#exercise-6-create-a-host-pool-and-assign-pooled-remote-apps).
 
-\2.   When you get to step 5 to configure **Virtual machine settings**, select **Browse all images and disks** and then select the tab option for **My Items** to select the image that was created.
+2. When you get to step 5 to configure **Virtual machine settings**, select **Browse all images and disks** and then select the tab option for **My Items** to select the image that was created.
 
-[![This is where you will find your custom image to add to the host pool.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image019.png)](images/hostpoolcustom.png)
+   ![This is where you will find your custom image to add to the host pool.](images/hostpoolcustom.png)
 
- 
