@@ -34,7 +34,7 @@ It is also important to keep in mind that these groups can also originate from t
 
    -    **Membership type:** Assigned
 
-   ![Create a new security group type and provide the WVD Pooled Desktop user for the group name.](/Users/neil/Documents/GitHub/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/Hands-on lab/images/newGroup2.png "New Group Window")
+   ![Create a new security group type and provide the WVD Pooled Desktop user for the group name.](images/newGroup2.png "New Group Window")
 
 5. Select **+ New group** again, fill in the following options and Select **Create**.
 
@@ -44,7 +44,7 @@ It is also important to keep in mind that these groups can also originate from t
 
    -    **Membership type:** Assigned
 
-   ![Create a new security group type and provide the WVD Remote App All users for the group name.](/Users/neil/Documents/GitHub/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/Hands-on lab/images/newGroup1.png "New Group Window")
+   ![Create a new security group type and provide the WVD Remote App All users for the group name.](images/newGroup1.png "New Group Window")
 
 6. Select **+ New group** again, fill in the following options and Select **Create**.
 
@@ -54,13 +54,13 @@ It is also important to keep in mind that these groups can also originate from t
 
    -    **Membership type:** Assigned
 
-   ![Create a new security group type and provide the WVD Persistent Desktop user for the group name.](/Users/neil/Documents/GitHub/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/Hands-on lab/images/newGroup3.png "New Group Window")
+   ![Create a new security group type and provide the WVD Persistent Desktop user for the group name.](images/newGroup3.png "New Group Window")
 
 7. Confirm that the groups have been added by going to **Azure Active Directory**, selecting **Groups**.  Scroll down to the bottom of the list of groups and the three groups that you created should be listed.
 
-   ![Go to Azure Active Directory Groups to view the list of groups.](/Users/neil/Documents/GitHub/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/Hands-on lab/images/aadgroups.png "Azure Active Directory Groups")
+   ![Go to Azure Active Directory Groups to view the list of groups.](images/aadgroups.png "Azure Active Directory Groups")
 
-   ![Scroll to the bottom of the list to view the three new groups that were created.](/Users/neil/Documents/GitHub/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/Hands-on lab/images/aadnewgroups.png "Azure Active Directory Groups")
+   ![Scroll to the bottom of the list to view the three new groups that were created.](images/aadnewgroups.png "Azure Active Directory Groups")
 
 ### Task 2: Assign users to groups
 
@@ -74,7 +74,7 @@ Now that the Azure AD groups are in place, we will assign users for testing. Onc
 
 4. Select **Members** and **+ Add Members**
 
-   ![Add members to the persistent desktop user group from within the Azure AD blade.](/Users/neil/Documents/GitHub/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/Hands-on lab/images/newMember.png "Azure AD blade")
+   ![Add members to the persistent desktop user group from within the Azure AD blade.](images/newMember.png "Azure AD blade")
 
 5. In the search field, enter the name of a User to add **Select** to add them to the group.
 
@@ -82,7 +82,7 @@ Now that the Azure AD groups are in place, we will assign users for testing. Onc
 
    At this point you have three new Azure AD groups with members assigned. Make a note of the group names and accounts you added for use later in this guide. These groups will be used to assign access to WVD application groups.
 
-   ![Here is the list of users that you should be adding to each of the groups.](/Users/neil/Documents/GitHub/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/Hands-on lab/images/aadwvdusers.png "Azure AD groups")
+   ![Here is the list of users that you should be adding to each of the groups.](images/aadwvdusers.png "Azure AD groups")
 
 
 ## 
