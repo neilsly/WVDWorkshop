@@ -20,27 +20,27 @@ In this exercise we are going to walk through the process of creating a master i
 2. On the Azure portal home page,     Select **Create a resource**.
 3. On the New page, search     for **Microsoft Windows 10**. Select **Windows 10 Enterprise     multi-session, Version 1909** and Select **Create**.
 
-[![This window will display the creation of a New Microsoft Windows 10 VM using software plan Windows 10 Enterprise multi-session, Version 1909.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png)](https://github.com/neilsly/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/blob/main/Hands-on lab/images/windows10VM.png)
+[![This window will display the creation of a New Microsoft Windows 10 VM using software plan Windows 10 Enterprise multi-session, Version 1909.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png)](images/windows10VM.png)
 
 **Note**: In this exercise we are selecting a base Windows 10 image to start with, and installing Office 365 ProPlus using a custom deployment script. We are also using the latest available release of Windows 10 Enterprise multi-session, but you can choose the version based on your requirements.
 
 1. On the Create a virtual machine     page, fill in the required fields and create the VM by selecting **Review     + create**.
 
-[![This is what your configuration should look like.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image003.png)](https://github.com/neilsly/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/blob/main/Hands-on lab/images/win10vmcreate.png)
+[![This is what your configuration should look like.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image003.png)](images/win10vmcreate.png)
 
 **Note**: Make a note of the **Username** and **Password** used to create the VM. This information will be required to access the VM after creation.
 
 **Note**: This guide does not walk through the process of creating a VM in Azure. However, for **Inbound port rules**, be sure to allow **RDP (3389)** , or have a bastion host deployed for remote access.
 
-[![In the "Create a virtual machine" page within the Azure portal for the Windows 10 VM, allow port 3389 as an inbound port.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image005.png)](https://github.com/neilsly/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/blob/main/Hands-on lab/images/windows10VMcreate.png)
+[![In the "Create a virtual machine" page within the Azure portal for the Windows 10 VM, allow port 3389 as an inbound port.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image005.png)](images/windows10VMcreate.png)
 
 1. Once the VM is successfully deployed,     go to the resource, and connect using RDP. Sign in using the credentials     you supplied when creating the VM.
 
-[![Select connect in the Windows 10 VM overview to RDP to the vm.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image007.png)](https://github.com/neilsly/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/blob/main/Hands-on lab/images/connectwin10vm.png)
+[![Select connect in the Windows 10 VM overview to RDP to the vm.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image007.png)](images/connectwin10vm.png)
 
 1. Download the RDP file and open     the RDP file to connect.
 
-[![This image shows the download RDP button and the file that is downloaded to connect to the vm.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image009.png)](https://github.com/neilsly/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/blob/main/Hands-on lab/images/connectrdp.png)
+[![This image shows the download RDP button and the file that is downloaded to connect to the vm.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image009.png)](images/connectrdp.png)
 
 **Task 2: Run Windows Update**
 
@@ -48,12 +48,12 @@ Despite the Azure support teams best efforts, the Marketplace images are not alw
 
 1. From your master image VM, open     the **Settings** app and select **Updates &     Security**.
 
-[![On the new Windows 10 VM image, go to settings window and select update and security.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image011.png)](https://github.com/neilsly/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/blob/main/Hands-on lab/images/w10VMSettings.png)
+[![On the new Windows 10 VM image, go to settings window and select update and security.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image011.png)](images/w10VMSettings.png)
 
 1. Install all missing updates,     rebooting as necessary.
 2. Once the VM is fully patched,     the Windows Update Settings page should resemble the following screenshot.
 
-[![After checking for and running any updates, the settings window showing that Windows update is up to date.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image013.png)](https://github.com/neilsly/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/blob/main/Hands-on lab/images/w10vmSettingsUpToDate.png)
+[![After checking for and running any updates, the settings window showing that Windows update is up to date.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image013.png)](images/w10vmSettingsUpToDate.png)
 
 **Task 3: Prepare WVD image**
 
@@ -116,17 +116,17 @@ The UI form offers the following actions:
 
 https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/shawntmeyer/WVD/tree/master/Image-Build/Customizations
 
-[![You will open Microsoft Edge and paste the above link into the browser to download the file.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image015.png)](https://github.com/neilsly/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/blob/main/Hands-on lab/images/savecustomizations.png)
+[![You will open Microsoft Edge and paste the above link into the browser to download the file.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image015.png)](images/savecustomizations.png)
 
 1. **Save** the .zip file on your local workstation. Open the     RDP window to your master image VM. **Save as** the .zip file     to the documents folder.
 2. On the master image VM,     right-click on the .zip file on your desktop and select **Extract     All...**.
 
-[![After the file downloads, select the customizations document and extract the files to documents.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image017.png)](https://github.com/neilsly/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/blob/main/Hands-on lab/images/extractcustomizations.png)
+[![After the file downloads, select the customizations document and extract the files to documents.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image017.png)](images/extractcustomizations.png)
 
 1. Extract the files to **C:\Documents**.
 2. Open an elevated PowerShell     window by searching for PowerShell on the Windows 10 VM. Right-click and     run as administrator.
 
-[![You will search for the PowerShell application and right-click to run as administrator.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image019.png)](https://github.com/neilsly/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/blob/main/Hands-on lab/images/adminpowershell.png)
+[![You will search for the PowerShell application and right-click to run as administrator.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image019.png)](images/adminpowershell.png)
 
 1. Navigate to     "C:\Users\(loginaccount)\Documents\Customizations".
 
@@ -140,11 +140,11 @@ https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/shawntmeyer/
 
 \11. .\Prepare-WVDImage.ps1 -DisplayForm
 
-[![This is what you should be executing in PowerShell.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image021.png)](https://github.com/neilsly/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/blob/main/Hands-on lab/images/prepareimage.png)
+[![This is what you should be executing in PowerShell.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image021.png)](images/prepareimage.png)
 
 This will trigger the PowerShell form to launch. Select the appropriate options based on the following input information.
 
-[![This script will open the WVD golden image preparation window.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image023.png)](https://github.com/neilsly/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/blob/main/Hands-on lab/images/wvdgoldenimage.png)
+[![This script will open the WVD golden image preparation window.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image023.png)](images/wvdgoldenimage.png)
 
 - Select **Install Office     365** to Install Office 365 ProPlus while excluding Teams, Groove     and Skype. This will enable the Email and Calendar Caching settings below.
 
@@ -157,7 +157,7 @@ This will trigger the PowerShell form to launch. Select the appropriate options 
 - Select **Disable Windows     Update** to disable Windows Update in the image.
 - Select **Run System Clean     Up (CleanMgr.exe)** to execute Disk Cleanup.
 
-[![After selecting the options above, the preparation should look like this prior to selecting execute.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image025.png)](https://github.com/neilsly/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/blob/main/Hands-on lab/images/goldenimagesettings.png)
+[![After selecting the options above, the preparation should look like this prior to selecting execute.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image025.png)](images/goldenimagesettings.png)
 
 1. With the desired options     selected, Select **Execute**.
 
@@ -169,8 +169,8 @@ The script will take several minutes to complete depending on the options you se
 - If you selected to install     OneDrive, you will see a OneDrive window during execution.
 - If you selected to run System     Clean Up, you will see the Disk Cleanup wizard during execution. This     window may stay on the "Windows Update Cleanup" task for a few     minutes while it cleans out older files in the Windows Side by Side.
 
-[![The Window for the WVD Image Preparation Script will open for you to execute.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image027.png)](https://github.com/neilsly/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/blob/main/Hands-on lab/images/WVHScript.png)
+[![The Window for the WVD Image Preparation Script will open for you to execute.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image027.png)](images/WVHScript.png)
 
 **Note**: This script takes some time to run, so be patient as it may seem like nothing is happening for a while, and then applications will begin to install. You can watch the status from within PowerShell. After the Disk Cleanup Wizard closes, you may notice the PowerShell window does not update. It is waiting for the cleanmgr.exe process to close, which can take some time. You can select the PowerShell window and continue to hit the up arrow on your keyboard until you are presented with an active prompt.
 
-[![This is what you will see in PowerShell while the applications are being installed on the WVD golden image.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image029.png)](https://github.com/neilsly/MCW-Implementing-Windows-Virtual-Desktop-in-the-enterprise/blob/main/Hands-on lab/images/powershellstatus.png)
+[![This is what you will see in PowerShell while the applications are being installed on the WVD golden image.](file:///C:/Users/MARKMC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image029.png)](images/powershellstatus.png)
