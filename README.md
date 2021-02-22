@@ -6,10 +6,11 @@
 | Day 1     | Module                                                       | Time (minutes) |
 | --------- | ------------------------------------------------------------ | -------------- |
 |           | Intro / Welcome (slides)                                     | 30             |
-|           | Architecture (slides / demo / lab)                           | 60             |
-|           | [Configure Azure AD Connect with ADDS (lab)](3%20-%20Create%20Azure%20AD%20groups%20for%20WVD.md)                   | 30             |
+|           | Architecture (slides / demo / lab)                           | 45             |
+|           | [Configure Azure AD Connect with ADDS (lab)](3%20-%20Create%20Azure%20AD%20groups%20for%20WVD.md) | 30             |
+|           | [Create Azure AD groups for WVD](3%20-%20Create%20Azure%20AD%20groups%20for%20WVD.md) | 15             |
 |           | Break / Intermission                                         | 10             |
-|           | Create a hostpool and assign pooled desktops (lab)           | 45             |
+|           | [Create a hostpool and assign pooled desktops (lab)](4%20-%20Create%20a%20host%20pool%20and%20assign%20pooled%20remote%20apps.md) | 45             |
 |           | Creater a Master Image (Part 1) (demo / lab)                 | 30             |
 |           | Scale Session Hosts Automatically (Part 1) (lab)             | 15             |
 |           | Questions / Next Steps                                       | 20             |
