@@ -7,7 +7,7 @@
 | --------- | ------------------------------------------------------------ | -------------- |
 |           | Intro / Welcome (slides)                                     | 30             |
 |           | Architecture (slides / demo / lab)                           | 60             |
-|           | Configure Azure AD Connect with ADDS (lab)                   | 30             |
+|           | [Configure Azure AD Connect with ADDS (lab)](3%20-%20Create%20Azure%20AD%20groups%20for%20WVD.md)                   | 30             |
 |           | Break / Intermission                                         | 10             |
 |           | Create a hostpool and assign pooled desktops (lab)           | 45             |
 |           | Creater a Master Image (Part 1) (demo / lab)                 | 30             |
