@@ -11,14 +11,14 @@
 |           | [Create Azure AD groups for WVD](3%20-%20Create%20Azure%20AD%20groups%20for%20WVD.md) | 15             |
 |           | Break / Intermission                                         | 10             |
 |           | [Create a hostpool and assign pooled desktops (lab)](4%20-%20Create%20a%20host%20pool%20and%20assign%20pooled%20remote%20apps.md) | 45             |
-|           | Creater a Master Image (Part 1) (demo / lab)                 | 30             |
+|           | [Creater a Master Image (Part 1) (demo / lab)](5%20-%20Create%20a%20master%20image%20for%20WVD%20Part%201.md) | 30             |
 |           | Scale Session Hosts Automatically (Part 1) (lab)             | 15             |
 |           | Questions / Next Steps                                       | 20             |
 |           | TOTAL                                                        | 240            |
 | **Day 2** |                                                              |                |
 |           | Welcome / Review                                             | 15             |
 |           | FSLogix Setup                                                | 45             |
-|           | Create a Master Image (Part 2) (lab)                         | 30             |
+|           | [Create a Master Image (Part 2) (lab)](8%20-%20Create%20a%20master%20image%20for%20WVD%20Part%202.md) | 30             |
 |           | Create a hostpool for personal desktops (lab)                | 30             |
 |           | Break / Intermission                                         | 10             |
 |           | Scale Session Hosts Automatically (Part 2) (demo / discussion) | 15             |
