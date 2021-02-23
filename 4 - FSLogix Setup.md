@@ -2,7 +2,7 @@
 
 Duration:  45 minutes
 
-**Note: This step should be considered optional but highly reccomended. If you feel that you are behind or might become behind you can do this step at the end. If you choose not to perform this activity in order you will not have the proper fslogix data for the next step, creating a master image. You will be able to proceed, however you may be asked for this data in the next step. You may leave the portion pertaining to FSlogix blank.
+>**Note: This step should be considered optional but highly reccomended. If you feel that you are behind or might become behind you can do this step at the end. If you choose not to perform this activity in order you will not have the proper fslogix data for the next step, creating a master image. You will be able to proceed, however you may be asked for this data in the next step. You may leave the portion pertaining to FSlogix blank.
 
 In this exercise you will be creating an Azure File share and enabling SMB access via Active Directory authentication. Azure Files is a platform service (PaaS) and is one of the recommended solutions for hosting FSLogix containers for WVD users. At the end of this exercise you will have the following components:
 
