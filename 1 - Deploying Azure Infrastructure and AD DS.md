@@ -22,6 +22,10 @@ Duration:  30 minutes
 
 This diagram shows a Windows Virtual Desktop architecture with on-premises servers for Active Directory.  In the diagram, the host pools are providing the WVD session to the different supported devices. Azure Monitor, Network Watcher, and Log Analytics are monitoring and logging activity and performance metrics.
 
+(https://docs.microsoft.com/en-us/azure/virtual-desktop/media/windows-virtual-desktop-network-connections.svg)
+
+This diagram shows a high-level overview of the network connections used by Windows Virtual Desktop 
+
 ## Requirements
 
 Before you start setting up your Windows Virtual Desktop workspace, make sure you have the following items:
