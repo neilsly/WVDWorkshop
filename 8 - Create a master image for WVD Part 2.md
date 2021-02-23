@@ -2,7 +2,7 @@
 
 Duration: 30 minutes
 
-## This exercise is a continuation of Step 6 - Create  master image for WVD Part 1.  Please ensure you have completed those steps prior to performing these.
+>**Note: This exercise is a continuation of Step 6 - Create  master image for WVD Part 1.  Please ensure you have completed those steps prior to performing these.
 
 
 1. After the script has completed, select the Window start icon and note that Office, Microsoft Edge Chromium, and Microsoft Teams have been installed.

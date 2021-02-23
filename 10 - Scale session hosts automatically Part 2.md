@@ -2,7 +2,7 @@
 
 Duration: 15 Minutes
 
-## This exercise is a continuation of Step 7 - Scale session hosts automatically Part 1.  Please ensure you have completed those steps prior to performing these.
+>**Note: This exercise is a continuation of Step 7 - Scale session hosts automatically Part 1.  Please ensure you have completed those steps prior to performing these.
 
 ## Manage your scaling tool
 
