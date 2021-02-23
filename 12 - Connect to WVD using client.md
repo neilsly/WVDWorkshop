@@ -82,7 +82,7 @@ There are multiple clients available for you to access WVD resources. Refer to t
 9. You can exit the sign-in window of Excel Application by clicking on close button.
 
    
-## **Task 2: Access the Virtual Desktop**
+## Task 2: Access the Virtual Desktop**
 
 
 1. Run the WVD client, click on the tile named **Default Desktop** to launch the desktop.
