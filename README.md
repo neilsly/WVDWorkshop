@@ -23,7 +23,7 @@
 |           | Break / Intermission                                         | 10             |
 | Step 10   | [Scale Session Hosts Automatically (Part 2) (lab)](10%20-%20Scale%20session%20hosts%20automatically%20Part%202.md) | 15             |
 | Step 11   | [Connect to WVD using web client (lab)](11%20-%20Connect%20to%20WVD%20using%20web%20client.md)                        | 15             |
-| Step 12   | Access using WVD client (lab)                                | 15             |
+| Step 12   | [Access using WVD client (lab)](12%20-%20Connect%20to%20WVD%20using%20client.md)                                | 15             |
 | Step 13   | Monitoring / Troubleshooting (lab / discussion)              | 45             |
 |           | Questions / Wrap Up                                          | 20             |
 |           | TOTAL                                                        | 240            |
