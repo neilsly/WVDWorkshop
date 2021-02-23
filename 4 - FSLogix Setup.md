@@ -312,12 +312,10 @@ To simplify administration, create 4 new security groups in Active Directory to 
 
 Note: If your groups do not appear you may need to wait for Azure AD Connect to synchronize.  You may force this by using 
 
- ```
     Import-Module AdSync 
     Start-ADSyncSyncCycle -PolicyType Delta 
-```
 
-    ![Add the storage file data SMB share contributor role to the AZF FSLogix contributor role that were created within Active Directory.](images/azureadroleassigncontrib.png "Add FSLogix roles to Azure AD File share")
+![Add the storage file data SMB share contributor role to the AZF FSLogix contributor role that were created within Active Directory.](images/azureadroleassigncontrib.png "Add FSLogix roles to Azure AD File share")
 
 15. Repeat steps 3-4 for the remaining two roles.
 
