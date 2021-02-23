@@ -35,7 +35,6 @@ In this exercise we will be creating a non-persistent host pool for publishing r
 
    >**Note**: Selecting this image is very important. You will need the Microsoft 365 for assigning apps in this exercise.
 
-   ![In this blade, enter in the information for the host pool name and select next for virtual machines.](images/nextworkspace.png)
 
 6. On the Workspace page, select **Yes** to register a new desktop app group. Select **Create new** and provide a **Workspace name**. Select **OK** and **Review + create**.
 
