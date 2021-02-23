@@ -1,4 +1,4 @@
-## Step 2: Configuring Azure AD Connect with AD DS
+# Step 2: Configuring Azure AD Connect with AD DS
 
 Duration:  60 minutes
 

@@ -1,4 +1,4 @@
-## Step 3: Create Azure AD groups for WVD
+# Step 3: Create Azure AD groups for WVD
 
 Duration:  30 minutes
 
