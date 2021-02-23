@@ -172,7 +172,7 @@ In this task we will be completing the steps on the Domain Controller in Azure u
     
         >**Note**: You can run **Get-AzSubscription** to lookup the available subscription names.
     
-        ![Here is where you would find the subscription Id when running the Get-AzSubscription command.](images/subscriptionid.png "Subscription Id)
+        ![Here is where you would find the subscription Id when running the Get-AzSubscription command.](images/subscriptionid.png "Subscription Id")
 
 
 13.  Select the target subscription for the current session.
