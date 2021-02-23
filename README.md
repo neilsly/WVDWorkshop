@@ -21,7 +21,7 @@
 | Step 8    | [Create a Master Image (Part 2) (lab)](8%20-%20Create%20a%20master%20image%20for%20WVD%20Part%202.md) | 30             |
 | Step 9    | [Create a hostpool for personal desktops (lab)](9%20-%20Create%20a%20host%20pool%20for%20personal%20desktops.md)                | 30             |
 |           | Break / Intermission                                         | 10             |
-| Step 10   | Scale Session Hosts Automatically (Part 2) (demo / discussion) | 15             |
+| Step 10   | [Scale Session Hosts Automatically (Part 2) (lab)](10%20-%20Scale%20session%20hosts%20automatically%20Part%202.md) | 15             |
 | Step 11   | Connect to WVD using web client (lab)                        | 15             |
 | Step 12   | Access using WVD client (lab)                                | 15             |
 | Step 13   | Monitoring / Troubleshooting (lab / discussion)              | 45             |
