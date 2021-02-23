@@ -1,4 +1,4 @@
-# Step 13: Monitoring and Troubleshooting
+# Step 14: Monitoring and Troubleshooting
 
 Duration:  45 minutes
 

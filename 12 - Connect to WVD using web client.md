@@ -1,4 +1,4 @@
-# Step 11: Connect to WVD with the web client
+# Step 12: Connect to WVD with the web client
 
 Duration:  15 minutes
 

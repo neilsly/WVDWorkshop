@@ -1,4 +1,4 @@
-## Cleanup
+# Step 15: Cleanup
 
 Duration:  20 minutes
 
