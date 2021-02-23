@@ -33,6 +33,10 @@ In this exercise we will be creating a non-persistent host pool for publishing r
 
 5. When you configure **Virtual machine settings**, select **Image Type: Gallery** and then select **Windows 10 Enterprise multi-session, Version 20H2 + Microsoft 365 Apps** for **Image**
 
+When you configure **Location** please use the same Azure Region as in Step 1
+
+When you configure **Number of Servers** please specify 2
+
    ![This is where you will find your custom image to add to the host pool.](images/hostpoolgallery.png)
 
    >**Note**: Selecting this image is very important. You will need the Microsoft 365 for assigning apps in this exercise.
