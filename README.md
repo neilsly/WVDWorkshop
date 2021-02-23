@@ -3,8 +3,9 @@
 
 ## Agenda & Schedule
 
-| **Day 1**     | Module                                                       | Time (minutes) |
+|     | Module                                                       | Time (minutes) |
 | --------- | ------------------------------------------------------------ | -------------- |
+| **Day 1** | |
 |           | Intro / Welcome (slides)                                     | 15             |
 | Step 1    | [Architecture (lab / discussion)](1%20-%20Deploying%20Azure%20Infrastructure%20and%20AD%20DS.md) | 30             |
 | Step 2    | [Configure Azure AD Connect with ADDS (lab)](2%20-%20Configuring%20Azure%20AD%20Connect%20with%20AD%20DS.md) | 30             |
@@ -16,7 +17,7 @@
 | Step 7    | [Scale Session Hosts Automatically (Part 1) (lab)]()         | 15             |
 |           | Questions / Next Steps                                       | 20             |
 |           | TOTAL                                                        | 240            |
-| **Day 2** |                                                                              |
+| **Day 2** |                                                              |                |
 |           | Welcome / Review                                             | 15             |
 | Step 8    | [Create a Master Image (Part 2) (lab)](8%20-%20Create%20a%20master%20image%20for%20WVD%20Part%202.md) | 30             |
 | Step 9    | [Create a hostpool for personal desktops (lab)](9%20-%20Create%20a%20host%20pool%20for%20personal%20desktops.md)                | 30             |
