@@ -39,6 +39,10 @@ In this exercise we will be creating a non-persistent host pool for publishing r
 
    When you configure **Virtual Network** please specify the vnet that was created in Step 1 it should end with wvd1-vnet
 
+   When you configure **Domain Administrator** please specify the adadmin account using the format you specified in Step 1 Ad Domain Name
+
+   WHen you configure **Virtual Machine Administrator account** please specify username localadm and the same strong password you have been using
+
    ![This is where you will find your custom image to add to the host pool.](images/hostpoolgallery.png)
 
    >**Note**: Selecting this image is very important. You will need the Microsoft 365 for assigning apps in this exercise.
