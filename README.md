@@ -7,7 +7,7 @@
 | --------- | ------------------------------------------------------------ | -------------- |
 |           | Intro / Welcome (slides)                                     | 15             |
 | Step 1    | Architecture (lab / discussion)                              | 30             |
-| Step 2    | [Configure Azure AD Connect with ADDS (lab)](2 - Configuring Azure AD Connect with AD DS.md) | 30             |
+| Step 2    | [Configure Azure AD Connect with ADDS (lab)](2%20-%20Configuring%20Azure%20AD%20Connect%20with%20AD%20DS.md) | 30             |
 | Step 3    | [Create Azure AD groups for WVD (lab)](3%20-%20Create%20Azure%20AD%20groups%20for%20WVD.md) | 15             |
 |           | Break / Intermission                                         | 10             |
 | Step 4    | FS Logix Setup (lab - Optional)                              | 45             |
