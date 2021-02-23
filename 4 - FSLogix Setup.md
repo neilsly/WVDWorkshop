@@ -300,7 +300,7 @@ To simplify administration, create 4 new security groups in Active Directory to 
 
 12. Select **Access Control (IAM)**.
 
-13. Under **Grant Access to this Resources** click **Add**.
+13. Under **Grant Access to this Resource** click **Add**.
 
   
 14. On the Add role assignment fly out, fill in the following options and Select **Save**.
