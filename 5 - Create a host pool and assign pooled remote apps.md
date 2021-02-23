@@ -4,6 +4,8 @@ Duration:  45 minutes
 
 In this exercise we will be creating a non-persistent host pool for publishing remote apps. This enables you to assign users access to specific applications rather than an entire desktop. This type of application deployment serves many purposes and is not new to WVD, but has existed in Windows Server Remote Desktop Services for many years.
 
+>**Note: Please place all additional resources in the original Resource Group you created, and be sure to specify the same Azure Region as in Step 1.
+
 **Additional Resources**
 
 |                                                  |                                                              |
