@@ -300,10 +300,9 @@ To simplify administration, create 4 new security groups in Active Directory to 
 
 12. Select **Access Control (IAM)**.
 
-13. Select **+ Add** and select **Add role assignment**.
+13. Under **Grant Access to this Resources** click **Add**.
 
-    ![In the storage account, under access control, locate and select add under add a role assignment.](images/addroleassign.png "Add Azure AD Role assignment")
-
+  
 14. On the Add role assignment fly out, fill in the following options and Select **Save**.
 
     -    **Role:** Storage File Data SMB Share Contributor
