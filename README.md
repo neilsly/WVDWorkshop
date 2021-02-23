@@ -27,5 +27,5 @@
 | Step 12   | [Connect to WVD using web client (lab)](12%20-%20Connect%20to%20WVD%20using%20web%20client.md)                        | 15             |
 | Step 13   | [Connect to WVD using the WVD client (lab)](13%20-%20Connect%20to%20WVD%20using%20client.md)                                | 15             |
 | Step 14   | [Monitoring / Troubleshooting (lab / discussion)](14%20-%20Monitoring%20and%20troubleshooting.md)              | 45             |
-| Step 15   | [Questions / Wrap Up](15%20-%20cleanup.md)                                          | 20             |
+| Step 15   | [Questions / Wrap Up](15%20-%20Cleanup.md)                                          | 20             |
 |           | TOTAL                                                        | 240            |
