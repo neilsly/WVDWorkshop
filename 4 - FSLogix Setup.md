@@ -161,9 +161,9 @@ In this task we will be completing the steps on the Domain Controller in Azure u
 
 
         ```
-        $SubscriptionId = "\<subscription-id\>\"
-        $ResourceGroupName = "\<resource-group-name\>\"
-        $StorageAccountName = "\<storage-account-name\>\"
+        $SubscriptionId = "<subscription-id>"
+        $ResourceGroupName = "<resource-group-name>"
+        $StorageAccountName = "<storage-account-name>"
         ```
 
 
