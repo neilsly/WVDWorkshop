@@ -21,7 +21,7 @@ The scaling tool uses a combination of an Azure Automation account, a PowerShell
 During peak usage time, the job checks the current number of sessions and the VM capacity of the current running session host for each host pool. It uses this information to calculate if the running session host VMs can support existing sessions based on the *SessionThresholdPerCPU* parameter defined for the **CreateOrUpdateAzLogicApp.ps1** file. If the session host VMs can't support existing sessions, the job starts additional session host VMs in the host pool.
 
 >Note
->*SessionThresholdPerCPU* doesn't restrict the number of sessions on the VM. This parameter only determines when new VMs need to be started to load-balance the connections. To restrict the number of sessions, you need to follow the instructions [Update-AzWvdHostPool](configure-host-pool-load-balancing.md#configure-breadth-first-load-balancing) to configure the *MaxSessionLimit* parameter accordingly.
+>*SessionThresholdPerCPU* doesn't restrict the number of sessions on the VM. This parameter only determines when new VMs need to be started to load-balance the connections. To restrict the number of sessions, you need to follow the to configure the *MaxSessionLimit* parameter accordingly.
 
 During the off-peak usage time, the job determines how many session host VMs should be shut down based on the *MinimumNumberOfRDSH* parameter. If you set the *LimitSecondsToForceLogOffUser* parameter to a non-zero positive value, the job will set the session host VMs to drain mode to prevent new sessions from connecting to the hosts. The job will then notify any currently signed in users to save their work, wait the configured amount of time, and then force the users to sign out. Once all user sessions on the session host VM have been signed out, the job will shut down the VM. After the VM shuts down, the job will reset its session host drain mode.
 
@@ -38,7 +38,7 @@ However, the tool also has the following limitations:
 
 - This solution applies only to pooled multi-session session host VMs.
 - This solution manages VMs in any region, but can only be used in the same subscription as your Azure Automation account and Azure Logic App.
-- The maximum runtime of a job in the runbook is 3 hours. If starting or stopping the VMs in the host pool takes longer than that, the job will fail. For more details, see [Shared resources](../automation/automation-runbook-execution.md#fair-share).
+- The maximum runtime of a job in the runbook is 3 hours. If starting or stopping the VMs in the host pool takes longer than that, the job will fail. 
 
 >Note
 >The scaling tool controls the load balancing mode of the host pool it's currently scaling. The tool uses breadth-first load balancing mode for both peak and off-peak hours.
@@ -102,7 +102,7 @@ First, you'll need an Azure Automation account to run the PowerShell runbook. Th
 7. After you've set up your Azure Automation account, sign in to your Azure subscription and check to make sure your Azure Automation account and the relevant runbook have appeared in your specified resource group, as shown in the following image:
 
     >[!div class="mx-imgBorder"]
-    >![An image of the Azure overview page showing the newly created Azure Automation account and runbook.](media/automation-account.png)
+    >![An image of the Azure overview page showing the newly created Azure Automation account and runbook.](images/automation-account.)
 
     To check if your webhook is where it should be, select the name of your runbook. Next, go to your runbook's Resources section and select **Webhooks**.
 
@@ -213,9 +213,9 @@ Finally, you'll need to create the Azure Logic App and set up an execution sched
     After you run the script, the Azure Logic App should appear in a resource group, as shown in the following image.
 
     >[!div class="mx-imgBorder"]
-    >![An image of the overview page for an example Azure Logic App.](media/logic-app.png)
+    >![An image of the overview page for an example Azure Logic App.](images/logic-app.)
 
     To make changes to the execution schedule, such as changing the recurrence interval or time zone, go to the Azure Logic App autoscale scheduler and select **Edit** to go to the Azure Logic App Designer.
 
     >[!div class="mx-imgBorder"]
-    >![An image of the Azure Logic App Designer. The Recurrence and webhook menus that let the user edit recurrence times and the webhook file are open.](media/logic-apps-designer.png)
+    >![An image of the Azure Logic App Designer. The Recurrence and webhook menus that let the user edit recurrence times and the webhook file are open.](images/logic-apps-designer.)
