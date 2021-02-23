@@ -363,12 +363,17 @@ The first time you configure NTFS permission, do so using superuser permissions.
     >**Note**: Refer to the following examples to prepare your command. Be sure to enter spaces where (space) is noted:
     net use z:(space) \\\\\<storage-account-name\>.file.core.windows.net\\\<share-name>(space) <storage-account-key\>(space) /user:Azure\\\<storage-account-name\>
 
+        Example:
+                
+        net use z: \\STORAGE_ACCOUNT_NAME.file.core.windows.net\FILE_SHARE_NAME PASTE_KEY_1_HERE user:Azure\STORAGE_ACCOUNT_NAME
+    
+ 
         Example with sample values:
                 
         net use z: \\mydomainazfiles.file.core.windows.net\FSLogix uPCvi+gP2qbCQcn3EATgbALE0H8nxhspyLRO2Nf9Hm2gMxfn/389/M33XHh7YEqNJ2GhbJXgStiifPwMBXk38Q== user:Azure\mydomainazfiles
     
 
-    ![From the command prompt, run the script list above to connect the storage account as a network drive.](images/cmdprompt.png "Command Prompt script for mapping drive")
+  
 
     >**Note**: This is an SMB connection on port 445. Most consumer ISPs block this port by default. If you are doing this in your environment and experience issues mounting the share from a local computer, try connecting from a domain joined VM in Azure.
 
