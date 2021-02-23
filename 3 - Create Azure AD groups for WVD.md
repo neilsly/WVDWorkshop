@@ -1,6 +1,6 @@
 # Step 3: Create Azure AD groups for WVD
 
-Duration:  30 minutes
+Duration:  15 minutes
 
 In this exercise you will be working with groups in Azure Active Directory (Azure AD) to assist in managing access assignment to your application groups in WVD. The new ARM portal for WVD supports access assignment using Azure AD groups. This capability greatly simplifies access management. Groups will also be leveraged in this guide to manage
 share permissions in Azure Files for FSLogix.
