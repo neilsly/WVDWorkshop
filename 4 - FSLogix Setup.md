@@ -1,6 +1,10 @@
 # Step 4: FSLogix Setup
 
-Duration:  90 minutes
+Duration:  45 minutes
+
+**<u>Note: This step should be considered optional but highly reccomended. If you feel that you are behind or might become behind you can do this step at the end.</u>** 
+
+**<u>If you choose not to perform this activity in order you will not have the proper fslogix data for the next step, creating a master image. You will be able to proceed, however you may be asked for this data in the next step. You may leave the portion pertaining to FSlogix blank.**</u>
 
 In this exercise you will be creating an Azure File share and enabling SMB access via Active Directory authentication. Azure Files is a platform service (PaaS) and is one of the recommended solutions for hosting FSLogix containers for WVD users. At the end of this exercise you will have the following components:
 
@@ -14,10 +18,10 @@ In this exercise you will be creating an Azure File share and enabling SMB acces
 
 **Additional Resources**
 
-  |              |            |  
+|              |            |
 |----------|:-------------:|
 | Description | Links |
-| Windows File Server |https://docs.microsoft.com/en-us/azure/virtual-desktop/create-host-pools-user-profile| 
+| Windows File Server |https://docs.microsoft.com/en-us/azure/virtual-desktop/create-host-pools-user-profile|
 |NetApp Files|https://docs.microsoft.com/en-us/azure/virtual-desktop/create-FSLogix-profile-container |
 |Azure Files | https://docs.microsoft.com/en-us/azure/virtual-desktop/create-profile-container-adds |
 |              |            |
@@ -156,7 +160,7 @@ In this task we will be completing the steps on the Domain Controller in Azure u
     ```
 
 12.  Create the following PowerShell variables replacing the subscription id, resource group name, and storage account with the information specific to your lab environment:
-    
+
 
         ```
         $SubscriptionId = "\<subscription-id\>\"
@@ -167,14 +171,14 @@ In this task we will be completing the steps on the Domain Controller in Azure u
 
 
         >**Note**: The Resource Group Name and Storage Account Name were assigned in Task 1.
-
+    
         >**Note**: You can run **Get-AzSubscription** to lookup the available subscription names.
-
+    
         ![Here is where you would find the subscription Id when running the Get-AzSubscription command.](images/subscriptionid.png "Subscription Id)
 
 
 13.  Select the target subscription for the current session.
-  
+
 
         ```
         Select-AzSubscription -SubscriptionId $SubscriptionId
@@ -184,7 +188,7 @@ In this task we will be completing the steps on the Domain Controller in Azure u
 
     ```
     Join-AzStorageAccount -ResourceGroupName $ResourceGroupName
-   
+      
     ```
 
     >**Note**: You will be prompted to enter the Azure storage account name after you run this command.  The prompt will look like the below screenshot.
@@ -206,7 +210,7 @@ In this task we will be completing the steps on the Domain Controller in Azure u
         ```
 
 18.  List the directory service of the selected service account.
- 
+
         ```
         $storageAccount.AzureFilesIdentityBasedAuth.DirectoryServiceOptions
         ```
@@ -357,14 +361,14 @@ The first time you configure NTFS permission, do so using superuser permissions.
 6.  From a domain joined computer, open a standard command prompt and mount your file share using the storage account key. **Do not** use an elevated command prompt or the mount point will not be visible in File Explorer. 
 
     ![Go to the search on Windows to find and open the Command prompt.](images/opencommandprompt.png)
-     
+    
     >**Note**: Refer to the following examples to prepare your command. Be sure to enter spaces where (space) is noted:
     net use z:(space) \\\\\<storage-account-name\>.file.core.windows.net\\\<share-name>(space) <storage-account-key\>(space) /user:Azure\\\<storage-account-name\>
 
         Example with sample values:
                 
         net use z: \\mydomainazfiles.file.core.windows.net\FSLogix uPCvi+gP2qbCQcn3EATgbALE0H8nxhspyLRO2Nf9Hm2gMxfn/389/M33XHh7YEqNJ2GhbJXgStiifPwMBXk38Q== user:Azure\\mydomainazfiles
-        
+    
 
     ![From the command prompt, run the script list above to connect the storage account as a network drive.](images/cmdprompt.png "Command Prompt script for mapping drive")
 

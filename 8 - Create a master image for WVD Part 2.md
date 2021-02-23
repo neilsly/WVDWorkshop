@@ -1,18 +1,9 @@
 # Step 8: Create a master image for WVD (Part 2)
 
-Duration: 90 minutes
+Duration: 30 minutes
 
-In this exercise we are going to walk through the process of creating a master image for your WVD host pools. The basic concept for a master image is to start with a clean base install of Windows and layer on mandatory updates, applications and configurations. There are many ways to create and manage images for WVD. The steps covered in this exercise are going to walk you through a basic build and capture process that includes core applications and recommended configuration options for WVD.
+## This exercise is a continuation of Step 6 - Create  master image for WVD Part 1.  Please ensure you have completed those steps prior to performing these.
 
-**Additional Resources**
-
-|                                                              |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Description                                                  | Links                                                        |
-| Create a managed image of a generalized VM  in Azure         | https://docs.microsoft.com/en-us/azure/virtual-machines/windows/capture-image-resource |
-| For more information on how to deploy a  virtual machine in Azure | https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal |
-| For more information on how to setup a  Bastion host in Azure | https://docs.microsoft.com/en-us/azure/bastion/bastion-create-host-portal |
-|                                                              |    
 
 1. After the script has completed, select the Window start icon and note that Office, Microsoft Edge Chromium, and Microsoft Teams have been installed.
 

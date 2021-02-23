@@ -1,5 +1,7 @@
 # Step 1: Deploying Azure Infrastrucure and AD DS
 
+Duration:  30 minutes
+
 ## Requirements
 
 Before you start setting up your Windows Virtual Desktop workspace, make sure you have the following items:
