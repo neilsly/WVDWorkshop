@@ -4,7 +4,7 @@ Duration: 15 Minutes
 
 You can reduce your total Windows Virtual Desktop deployment cost by scaling your virtual machines (VMs). This means shutting down and deallocating session host VMs during off-peak usage hours, then turning them back on and reallocating them during peak hours.
 
-In this article, you'll learn about the scaling tool built with the Azure Automation account and Azure Logic App that automatically scales session host VMs in your Windows Virtual Desktop environment. To learn how to use the scaling tool, skip ahead to [Prerequisites](#prerequisites).
+In this lab, you'll learn about the scaling tool built with the Azure Automation account and Azure Logic App that automatically scales session host VMs in your Windows Virtual Desktop environment. 
 
 ## How the scaling tool works
 
@@ -101,7 +101,7 @@ First, you'll need an Azure Automation account to run the PowerShell runbook. Th
 
 7. After you've set up your Azure Automation account, sign in to your Azure subscription and check to make sure your Azure Automation account and the relevant runbook have appeared in your specified resource group, as shown in the following image:
 
-    >[!div class="mx-imgBorder"]
+    
     >![An image of the Azure overview page showing the newly created Azure Automation account and runbook.](images/automation-account.png)
 
     To check if your webhook is where it should be, select the name of your runbook. Next, go to your runbook's Resources section and select **Webhooks**.
@@ -110,7 +110,7 @@ First, you'll need an Azure Automation account to run the PowerShell runbook. Th
 
 Now that you have an Azure Automation account, you'll also need to create an Azure Automation Run As account if you don't have one already. This account will let the tool access your Azure resources.
 
-An [Azure Automation Run As account](../automation/manage-runas-account.md) provides authentication for managing resources in Azure with Azure cmdlets. When you create a Run As account, it creates a new service principal user in Azure Active Directory and assigns the Contributor role to the service principal user at the subscription level. An Azure Run As account is a great way to authenticate securely with certificates and a service principal name without needing to store a username and password in a credential object. To learn more about Run As account authentication, see [Limit Run As account permissions](../automation/manage-runas-account.md#limit-run-as-account-permissions).
+An Azure Automation Run As account provides authentication for managing resources in Azure with Azure cmdlets. When you create a Run As account, it creates a new service principal user in Azure Active Directory and assigns the Contributor role to the service principal user at the subscription level. An Azure Run As account is a great way to authenticate securely with certificates and a service principal name without needing to store a username and password in a credential object. 
 
 Any user who's a member of the Subscription Admins role and coadministrator of the subscription can create a Run As account.
 
@@ -130,7 +130,7 @@ To create a Run As account in your Azure Automation account:
 
 ## Create the Azure Logic App and execution schedule
 
-Finally, you'll need to create the Azure Logic App and set up an execution schedule for your new scaling tool. First, download and import the [Desktop Virtualization PowerShell module](powershell-module.md) to use in your PowerShell session if you haven't already.
+Finally, you'll need to create the Azure Logic App and set up an execution schedule for your new scaling tool. First, download and import the [Desktop Virtualization PowerShell module](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell#powershell-core) to use in your PowerShell session if you haven't already.
 
 1. Open Windows PowerShell.
 
@@ -212,10 +212,9 @@ Finally, you'll need to create the Azure Logic App and set up an execution sched
 
     After you run the script, the Azure Logic App should appear in a resource group, as shown in the following image.
 
-    >[!div class="mx-imgBorder"]
+
     >![An image of the overview page for an example Azure Logic App.](images/logic-app.png)
 
     To make changes to the execution schedule, such as changing the recurrence interval or time zone, go to the Azure Logic App autoscale scheduler and select **Edit** to go to the Azure Logic App Designer.
 
-    >[!div class="mx-imgBorder"]
     >![An image of the Azure Logic App Designer. The Recurrence and webhook menus that let the user edit recurrence times and the webhook file are open.](images/logic-apps-designer.png)
