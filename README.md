@@ -23,6 +23,7 @@
 | Step 9    | [Create a hostpool for personal desktops (lab)](9%20-%20Create%20a%20host%20pool%20for%20personal%20desktops.md)                | 30             |
 |           | Break / Intermission                                         | 10             |
 | Step 10   | [Scale Session Hosts Automatically (Part 2) (lab)](10%20-%20Scale%20session%20hosts%20automatically%20Part%202.md) | 15             |
+| Step 11   | [Create a hostpool and assign pooled remote apps (lab)](11%20-%20Create%20a%20host%20pool%20and%20assign%20pooled%20remote%20apps.md) | 30 |
 | Step 11   | [Connect to WVD using web client (lab)](11%20-%20Connect%20to%20WVD%20using%20web%20client.md)                        | 15             |
 | Step 12   | [Connect to WVD using the WVD client (lab)](12%20-%20Connect%20to%20WVD%20using%20client.md)                                | 15             |
 | Step 13   | [Monitoring / Troubleshooting (lab / discussion)](13%20-%20Monitoring%20and%20troubleshooting.md)              | 45             |
