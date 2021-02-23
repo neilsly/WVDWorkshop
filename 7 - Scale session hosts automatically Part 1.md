@@ -102,7 +102,7 @@ First, you'll need an Azure Automation account to run the PowerShell runbook. Th
 7. After you've set up your Azure Automation account, sign in to your Azure subscription and check to make sure your Azure Automation account and the relevant runbook have appeared in your specified resource group, as shown in the following image:
 
     >[!div class="mx-imgBorder"]
-    >![An image of the Azure overview page showing the newly created Azure Automation account and runbook.](images/automation-account.)
+    >![An image of the Azure overview page showing the newly created Azure Automation account and runbook.](images/automation-account.png)
 
     To check if your webhook is where it should be, select the name of your runbook. Next, go to your runbook's Resources section and select **Webhooks**.
 
@@ -213,9 +213,9 @@ Finally, you'll need to create the Azure Logic App and set up an execution sched
     After you run the script, the Azure Logic App should appear in a resource group, as shown in the following image.
 
     >[!div class="mx-imgBorder"]
-    >![An image of the overview page for an example Azure Logic App.](images/logic-app.)
+    >![An image of the overview page for an example Azure Logic App.](images/logic-app.png)
 
     To make changes to the execution schedule, such as changing the recurrence interval or time zone, go to the Azure Logic App autoscale scheduler and select **Edit** to go to the Azure Logic App Designer.
 
     >[!div class="mx-imgBorder"]
-    >![An image of the Azure Logic App Designer. The Recurrence and webhook menus that let the user edit recurrence times and the webhook file are open.](images/logic-apps-designer.)
+    >![An image of the Azure Logic App Designer. The Recurrence and webhook menus that let the user edit recurrence times and the webhook file are open.](images/logic-apps-designer.png)
