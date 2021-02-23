@@ -1,4 +1,4 @@
-# Step 5: FSLogix Setup
+# Step 4: FSLogix Setup
 
 Duration:  90 minutes
 
