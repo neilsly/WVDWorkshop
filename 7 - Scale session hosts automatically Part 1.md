@@ -6,6 +6,15 @@ You can reduce your total Windows Virtual Desktop deployment cost by scaling you
 
 In this lab, you'll learn about the scaling tool built with the Azure Automation account and Azure Logic App that automatically scales session host VMs in your Windows Virtual Desktop environment. 
 
+
+**Additional Resources**
+
+|                                                  |                                                              |
+| ------------------------------------------------ | :----------------------------------------------------------: |
+| Description                                      |                            Links                             |
+| Scale Session Hosts Automatically | https://docs.microsoft.com/en-us/azure/virtual-desktop/publish-apps |
+|                                                  |                                                              |
+
 ## How the scaling tool works
 
 The scaling tool provides a low-cost automation option for customers who want to optimize their session host VM costs.
