@@ -39,7 +39,7 @@ There are multiple clients available for you to access WVD resources. Refer to t
 
 2. Open the application and click on **Subscribe**.
 
-   (media/a49.png)
+   (images/a49.png)
   
   
 3. Sign in using a synchronized identity that has been assigned to an application group.
@@ -48,63 +48,63 @@ There are multiple clients available for you to access WVD resources. Refer to t
 
    - Username: *Paste your username* **<inject key="AzureAdUserEmail" />** *and then click on **Next**.*
    
-   ![ws name.](media/95.png)
+   ![ws name.](images/95.png)
 
    - Password: *Paste the password* **<inject key="AzureAdUserPassword" />** *and click on **Sign in**.*
 
-   ![ws name.](media/96.png)
+   ![ws name.](images/96.png)
    
    
 4. Make sure to **uncheck** *Allow my organization to manage my device* and click on **This app only**.
 
-   ![ws name.](media/55.png)
+   ![ws name.](images/55.png)
 
 
 5. Select an available resource from the client. In this example we will run **Excel** 
 
 
-   ![ws name.](media/ag10.png)
+   ![ws name.](images/ag10.png)
    
 
 6. Sign in using a synchronized identity that has been assigned to an application group.
    
-   ![ws name.](media/89.png)
+   ![ws name.](images/89.png)
    
 
 7. Wait for your application to connect.
 
-   ![ws name.](media/58.png)
+   ![ws name.](images/58.png)
    
 
 8. The Excel application will launch and will look similar to the screenshot below.
 
-   ![ws name.](media/w13.png) 
+   ![ws name.](images/w13.png) 
     
 9. You can exit the sign-in window of Excel Application by clicking on close button.
 
-   ![ws name.](media/w11.png)
+   ![ws name.](images/w11.png)
    
 ## **Task 2: Access the Virtual Desktop**
 
 
 1. Run the WVD client, click on the tile named **Default Desktop** to launch the desktop.
 
-   ![ws name.](media/ag11.png)
+   ![ws name.](images/ag11.png)
    
 
 2. Sign in using a synchronized identity that has been assigned to an application group.
    
-   ![ws name.](media/89.png)
+   ![ws name.](images/89.png)
    
 
 3. Wait for your Desktop to connect.
 
-   ![ws name.](media/62.png)
+   ![ws name.](images/62.png)
    
 
 4. Your virtual desktop will launch.
         
-   ![ws name.](media/launchwvd1.png)   
+   ![ws name.](images/launchwvd1.png)   
     
      
 5. Click on the **Next** button present in the bottom-right corner of this lab guide. 
