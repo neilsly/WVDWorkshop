@@ -370,7 +370,7 @@ The first time you configure NTFS permission, do so using superuser permissions.
 
     ![From the command prompt, run the script list above to connect the storage account as a network drive.](images/cmdprompt.png "Command Prompt script for mapping drive")
 
-    >**Note**: This is an SMB connection on port 445. Most consumer ISPs block this port by default. If you are doing this in your lab and experience issues mounting the share from a local computer, try connecting from a domain joined VM in Azure.
+    >**Note**: This is an SMB connection on port 445. Most consumer ISPs block this port by default. If you are doing this in your environment and experience issues mounting the share from a local computer, try connecting from a domain joined VM in Azure.
 
     ![After the net use command is completed successfully, you will receive a prompt that it was completed successfully.  You will also be able to see the drive as a network location in file explorer.](images/successfulstoragemap.png)
 

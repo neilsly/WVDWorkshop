@@ -29,7 +29,7 @@ There are multiple clients available for you to access WVD resources. Refer to t
 
 2.  Navigate to the https://rdweb.wvd.microsoft.com/arm/webclient.
 
-    >**Note**: You will be asked to login when you access the above URL.  The credentials that you use are those from the lab.
+    >**Note**: You will be asked to login when you access the above URL.  The credentials that you use are those that you created earlier.
 
 3.  Sign in using a synchronized identity that has been assigned to an application group.
 
@@ -39,7 +39,7 @@ There are multiple clients available for you to access WVD resources. Refer to t
 
     ![Select to use another account to enter the login email.](images/useanotheraccount.png)
 
-    ![Enter the email address for the lab Azure tenant.](images/signinwithtenantadmin.png)
+    ![Enter the email address for the workshop Azure tenant.](images/signinwithtenantadmin.png)
 
     ![Enter the password for the username that you entered.](images/enterpw.png)
 
@@ -57,7 +57,7 @@ There are multiple clients available for you to access WVD resources. Refer to t
 
     ![On the domain controller VM, you can find the username here.](images/dcusername.png)
 
-    ![Enter the username from the domain controller and the password created during initial lab deployment.](images/dccreds.png)
+    ![Enter the username from the domain controller and the password created during initial deployment.](images/dccreds.png)
 
 7.  Once connected, validate the components relative to your configuration. The desktop should show icons for Microsoft Edge and Microsoft Teams.  When you go to the Windows start menu, you can find the Office applications.
 

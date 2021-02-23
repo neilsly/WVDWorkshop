@@ -4,7 +4,7 @@ Duration:  30 minutes
 
 In this exercise you will be configuring [Azure AD Connect](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect). With Windows Virtual Desktop, all session host VMs within the WVD tenant environment are required to be domain joined to AD DS, and the domain must be synchronized with Azure AD. To manage the synchronization of objects, you will configure Azure AD Connect on the domain controller deployed in Azure.
 
->**Note**: RDP access to a domain controller using a public IP address is not a best practice and is only done to simplify this lab. Better security practices such as removing the PIP, enabling just-in-time access and/or leveraging a bastion host should be applied enhance security.
+>**Note**: RDP access to a domain controller using a public IP address is not a best practice and is only done to simplify this experience. Better security practices such as removing the PIP, enabling just-in-time access and/or leveraging a bastion host should be applied enhance security.
 
 **Additional Resources**
 
@@ -43,7 +43,7 @@ In this exercise you will be configuring [Azure AD Connect](https://docs.microso
 
 ### Task 2: Disabling IE Enhanced Security
 
-In an effort to simplify tasks in this lab, we will start by disabling [IE Enhanced Security](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-ie-esc).
+In an effort to simplify tasks in this workshop, we will start by disabling [IE Enhanced Security](https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-ie-esc).
 
 1. Once connected to the domain controller, open Server Manager if it does not start automatically.
 
@@ -86,7 +86,7 @@ By default, Azure AD Connect does not synchronize the built-in domain administra
 
 5. On the Select Groups dialog window, type **Domain Admins** and Select **OK**.
 
-   >**Note**: This account will be used during the host pool creation process for joining the hosts to the domain. Granting Domain Admin permissions will simplify the lab. However, any Active Directory account that has the following permissions will suffice. This can be done using [Active Directory Delegate Control](https://danielengberg.com/domain-join-permissions-delegate-active-directory/). 
+   >**Note**: This account will be used during the host pool creation process for joining the hosts to the domain. Granting Domain Admin permissions will simplify the workshop. However, any Active Directory account that has the following permissions will suffice. This can be done using [Active Directory Delegate Control](https://danielengberg.com/domain-join-permissions-delegate-active-directory/). 
 
    ![In the next window, we will add this user to the Domain Admins group.](images/addusertodomainadmins.png "Add user to Domain Admins group")
 
