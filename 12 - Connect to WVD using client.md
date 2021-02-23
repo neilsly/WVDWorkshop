@@ -78,11 +78,9 @@ There are multiple clients available for you to access WVD resources. Refer to t
 
 8. The Excel application will launch and will look similar to the screenshot below.
 
-   ![ws name.](images/w13.png) 
     
 9. You can exit the sign-in window of Excel Application by clicking on close button.
 
-   ![ws name.](images/w11.png)
    
 ## **Task 2: Access the Virtual Desktop**
 
@@ -103,8 +101,4 @@ There are multiple clients available for you to access WVD resources. Refer to t
    
 
 4. Your virtual desktop will launch.
-        
-   ![ws name.](images/launchwvd1.png)   
-    
-     
-5. Click on the **Next** button present in the bottom-right corner of this lab guide. 
+
