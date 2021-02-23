@@ -2,6 +2,26 @@
 
 Duration:  30 minutes
 
+**Additional Resources**
+
+|                                                             |                                                              |
+| ----------------------------------------------------------- | :----------------------------------------------------------: |
+| Description                                                 |                            Links                             |
+| WVD Overview and Requirements | https://docs.microsoft.com/en-us/azure/virtual-desktop/overview |
+| Environmental Terms (Host pools, App groups, Workspaces, Oh My!) | https://docs.microsoft.com/en-us/azure/virtual-desktop/environment-setup |
+| Host pool load-balancing methods | https://docs.microsoft.com/en-us/azure/virtual-desktop/host-pool-load-balancing |
+| Understanding WVD Network Connectivity | https://docs.microsoft.com/en-us/azure/virtual-desktop/network-connectivity |
+| WVD FAQ | https://docs.microsoft.com/en-us/azure/virtual-desktop/faq |
+| Windows 10 Enterprise multi-session FAQ | https://docs.microsoft.com/en-us/azure/virtual-desktop/windows-10-multisession-faq |
+| Windows Virtual Desktop DOcumentation | https://docs.microsoft.com/en-us/azure/virtual-desktop/ |
+|                                                             |                                                              |
+
+## Solution architecture
+
+![This is the Solution architecture diagram as described in the text below.](images/wvdsolutiondiagramv2.png "Solution architecture") 
+
+This diagram shows a Windows Virtual Desktop architecture with on-premises servers for Active Directory.  In the diagram, the host pools are providing the WVD session to the different supported devices. Azure Monitor, Network Watcher, and Log Analytics are monitoring and logging activity and performance metrics.
+
 ## Requirements
 
 Before you start setting up your Windows Virtual Desktop workspace, make sure you have the following items:
@@ -23,10 +43,6 @@ Before you start setting up your Windows Virtual Desktop workspace, make sure yo
     -   Access to the Azure Active Directory Global Admin account for your new or existing Azure Active Directory Tenant.
 
     -   Owner rights on all Azure subscription(s).
-
-## Before the hands-on lab
-
-Duration:  45 minutes
 
 ### Task 1: Deploying Azure Infrastructure and AD DS
 
