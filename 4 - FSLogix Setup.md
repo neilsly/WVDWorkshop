@@ -36,9 +36,7 @@ Before you can work with an Azure file share, you need to create an Azure storag
 
 3.  On the Storage Accounts window that appears, Select **+ Add**.
 
-4.  Fill in the required parameters for the storage account. Refer to the following example for more information on the available parameters. Make a note that contains the values you provide for **Resource group** and **Storage account name**. These will be needed later in the exercise.
-
->**Note: Please ensure your storage account name is 15 characters or less
+4.  Fill in the required parameters for the storage account. Refer to the following example for more information on the available parameters. Make a note that contains the values you provide for **Resource group** and **Storage account name**. These will be needed later in the exercise.  Please make sure your storage acount name is 15 characters or less
 
     ![Select the Add icon to create a new storage account.](images/addstorageaccount.png "Add a storage account")
 
