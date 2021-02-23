@@ -301,7 +301,6 @@ To simplify administration, create 4 new security groups in Active Directory to 
 12. Select **Access Control (IAM)**.
 
 13. Under **Grant Access to this Resource** click **Add**.
-
   
 14. On the Add role assignment fly out, fill in the following options and Select **Save**.
 
@@ -310,6 +309,13 @@ To simplify administration, create 4 new security groups in Active Directory to 
     -    **Assign access to:** Azure AD user, group, or service principal
 
     -    **Select:** AZF FSLogix Contributor
+
+Note: If your groups do not appear you may need to wait for Azure AD Connect to synchronize.  You may force this by using 
+
+ ```
+     Import-Module AdSync 
+      Start-ADSyncSyncCycle -PolicyType Delta 
+```
 
     ![Add the storage file data SMB share contributor role to the AZF FSLogix contributor role that were created within Active Directory.](images/azureadroleassigncontrib.png "Add FSLogix roles to Azure AD File share")
 
