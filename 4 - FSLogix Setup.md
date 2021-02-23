@@ -368,12 +368,12 @@ The first time you configure NTFS permission, do so using superuser permissions.
 
         Example:
                 
-        net use z: \\STORAGE_ACCOUNT_NAME.file.core.windows.net\FILE_SHARE_NAME PASTE_KEY_1_HERE user:Azure\STORAGE_ACCOUNT_NAME
+        net use z: \\STORAGE_ACCOUNT_NAME.file.core.windows.net\FILE_SHARE_NAME PASTE_KEY_1_HERE /user:Azure\STORAGE_ACCOUNT_NAME
     
  
         Example with sample values:
                 
-        net use z: \\mydomainazfiles.file.core.windows.net\FSLogix uPCvi+gP2qbCQcn3EATgbALE0H8nxhspyLRO2Nf9Hm2gMxfn/389/M33XHh7YEqNJ2GhbJXgStiifPwMBXk38Q== user:Azure\mydomainazfiles
+        net use z: \\mydomainazfiles.file.core.windows.net\FSLogix uPCvi+gP2qbCQcn3EATgbALE0H8nxhspyLRO2Nf9Hm2gMxfn/389/M33XHh7YEqNJ2GhbJXgStiifPwMBXk38Q== /user:Azure\mydomainazfiles
     
 
   
