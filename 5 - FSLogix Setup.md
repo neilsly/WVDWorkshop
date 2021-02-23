@@ -2,7 +2,7 @@
 
 Duration:  90 minutes
 
-** Note: This step should be considered optional but highly encouraged.  If you feel that you are behind or may become behind, it is possible to skip and perform these steps at the end if you have time left over. **
+ **Note: This step should be considered optional but highly encouraged.  If you feel that you are behind or may become behind, it is possible to skip and perform these steps at the end if you have time left over.** 
 
 In this exercise you will be creating an Azure File share and enabling SMB access via Active Directory authentication. Azure Files is a platform service (PaaS) and is one of the recommended solutions for hosting FSLogix containers for WVD users. At the end of this exercise you will have the following components:
 
