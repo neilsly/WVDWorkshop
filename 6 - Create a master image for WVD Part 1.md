@@ -22,7 +22,7 @@ For more information on how to setup a Bastion host in Azure|https://docs.micros
 
 2.  On the Azure portal home page, Select **Create a resource**.
 
-3.  On the New page, search for **Microsoft Windows 10**. Select **Windows 10 Enterprise multi-session, Version 1909** and Select **Create**.
+3.  On the New page, search for **Microsoft Windows 10**. Select **Windows 10 Enterprise multi-session, Version 20H2** and Select **Create**.
 
 
     ![This window will display the creation of a New Microsoft Windows 10 VM using software plan Windows 10 Enterprise multi-session, Version 1909.](images/windows10VM.png "New Microsoft Windows 10 VM using software plan Windows 10 Enterprise multi-session, Version 1909")
