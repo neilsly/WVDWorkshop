@@ -46,7 +46,7 @@ In this exercise we will be creating a non-persistent host pool for publishing r
 **Vritual Machine Administrator Account** username should be **locadmin** and the password should match the other passwords used previously
 
 
->**Note:** this is being done for ease of use, please do not do this in production**
+>**Note:** this is being done for ease of use, please do not do this in production
 
     ![In this blade, enter in the information for the host pool name and select next for virtual machines.](images/nextworkspace.png)
 
