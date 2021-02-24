@@ -87,11 +87,11 @@ The system will automatically shut down and disconnect your RDP session.
 
    ![This is the information that you need to note for the name and resource group.](images/newimage.png)
 
-### Task 4: Provision a Host Pool with a custom image
+<!-- ### Task 4: Provision a Host Pool with a custom image
 
 1. To start provisioning a host pool with your custom image, follow the instructions in [Exercise 6](#exercise-6-create-a-host-pool-and-assign-pooled-remote-apps).
 
 2. When you get to step 5 to configure **Virtual machine settings**, select **Browse all images and disks** and then select the tab option for **My Items** to select the image that was created.
 
    ![This is where you will find your custom image to add to the host pool.](images/hostpoolcustom.png)
-
+-->
