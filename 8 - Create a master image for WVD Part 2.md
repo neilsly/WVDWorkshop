@@ -11,7 +11,7 @@ Duration: 30 minutes
 
 2. Once the script has completed execution, complete these final tasks:
 
-- Delete the C:\\BuildArtifacts directory.
+- Delete the C:\\Customizations directory.
 
 - Delete the .zip file on your desktop.
 
