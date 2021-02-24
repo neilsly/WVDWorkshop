@@ -172,25 +172,25 @@ The UI form offers the following actions:
 
 This will trigger the PowerShell form to launch. Select the appropriate options based on the following input information.
 
-![This script will open the WVD golden image preparation window.](images/wvdgoldenimage.png)
-
 - Select **Install Office 365** to Install Office 365 ProPlus while excluding Teams, Groove and Skype. This will enable the Email and Calendar Caching settings below.
 
   >**Note**: Update these settings as necessary. The Microsoft recommended settings are pre-selected. If you do not wish to apply these settings to the image, then set each to \'Not Configured\'.
 
-- Select **Install FSLogix Agent** to install the FSLogix Agent. If you select this option, the option to specify the FSLogix User Profile Container VHD Path is enabled. If you do not want to specify this option in the image, blank out this setting.
+- Select **Install FSLogix Agent** to install the FSLogix Agent. If you select this option, the option to specify the FSLogix User Profile Container VHD Path is enabled. The format for this is the same as your net use command as used in module 4, with \Profiles on the end, for example:
 
-- Select **Install OneDrive per Machine** to install the OneDrive sync client per machine. If you select this option, it will enable the AAD Tenant ID field. Enter your tenant id here to enable silent Known Folder Move functionality in your image. If you do not want this in your image, blank out the value.
+   \\mystorageaccount.file.core.windows.net\myfileshare\Profiles
+
+- Select **Install OneDrive per Machine** to install the OneDrive sync client per machine. If you select this option, it will enable the AAD Tenant ID field. Enter your tenant id here to enable silent Known Folder Move functionality in your image.  [Click here to find your AAD Tenant ID](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-how-to-find-tenant)
 
 - Select **Install Microsoft Teams per Machine** to install the per machine Teams install.
 
-- Select **Install Microsoft Edge Chromium v80+** to install the Microsoft Edge Enterprise browser based on Chromium.
+- Select **Install Microsoft Edge Enterprise** to install the Microsoft Edge Enterprise browser based on Chromium.
 
 - Select **Disable Windows Update** to disable Windows Update in the image.
 
 - Select **Run System Clean Up (CleanMgr.exe)** to execute Disk Cleanup.
 
-![After selecting the options above, the preparation should look like this prior to selecting execute.](images/goldenimagesettings.png)
+![After selecting the options above, the preparation should look like this prior to selecting execute.](images/imgprep.png)
 
 9. With the desired options selected, Select **Execute**.
 
@@ -203,8 +203,6 @@ This will trigger the PowerShell form to launch. Select the appropriate options 
 - If you selected to install OneDrive, you will see a OneDrive window during execution.
 
 - If you selected to run System Clean Up, you will see the Disk Cleanup wizard during execution. This window may stay on the \"Windows Update Cleanup\" task for a few minutes while it cleans out older files in the Windows Side by Side.
-
-  ![The Window for the WVD Image Preparation Script will open for you to execute.](images/WVHScript.png "The Window for the WVD Image Preparation Script")
 
   >**Note**: This script takes some time to run, so be patient as it may seem like nothing is happening for a while, and then applications will begin to install. You can watch the status from within PowerShell. After the Disk Cleanup Wizard closes, you may notice the PowerShell window does not update. It is waiting for the cleanmgr.exe process to close, which can take some time. You can select the PowerShell window and continue to hit the up arrow on your keyboard until you are presented with an active prompt.
 
