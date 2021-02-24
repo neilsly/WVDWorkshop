@@ -67,6 +67,12 @@ The system will automatically shut down and disconnect your RDP session.
 
 6. On the Create image blade, fill in the required fields and Select **Create**.
 
+ - Under **Target Image Definition** click **Create New**, input a name for **Image Definition name** and click **Ok** at the bottom
+
+    ![This will display the Create Image blade in Azure.](images/imgdef.png "Create Image blade in Azure")
+
+ - In **Version Number** input **1.0.0** 
+
    ![This will display the Create Image blade in Azure.](images/w10VMImage.png "Create Image blade in Azure")
 
 7. Once complete, type **images** in the **Search resources field** at the top of the page. Select **Images** from the list.
