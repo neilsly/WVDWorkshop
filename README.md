@@ -12,7 +12,7 @@
 | Step 3    | [Create Azure AD groups for WVD (lab)](3%20-%20Create%20Azure%20AD%20groups%20for%20WVD.md) | 15             |
 |           | Break / Intermission                                         | 10             |
 | Step 4    | [FS Logix Setup (lab - Optional)](4%20-%20FSLogix%20Setup.md) | 45             |
-| Step 5    | [Create a hostpool and assign pooled desktops (lab)](5%20-%20Create%20a%20host%20pool%20and%20assign%20pooled%20remote%20apps.md) | 30             |
+| Step 5    | --[Create a hostpool and assign pooled desktops (lab)](5%20-%20Create%20a%20host%20pool%20and%20assign%20pooled%20remote%20apps.md)-- | 30             |
 | Step 6    | [Create a Master Image (Part 1) (lab)](6%20-%20Create%20a%20master%20image%20for%20WVD%20Part%201.md) | 30             |
 | Step 7    | [Scale Session Hosts Automatically (Part 1) (lab)]()         | 15             |
 |           | Questions / Next Steps                                       | 20             |
