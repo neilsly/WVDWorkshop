@@ -25,15 +25,28 @@ In this exercise we will be creating a non-persistent host pool for publishing r
 
     ![Select host pools under manage and select add to add a new host pool.](images/wvdHostPool.png "Windows Virtual Desktop blade")
 
-4.  On the Basics page, refer to the following screenshot to fill in the required fields. Selecting **Pooled** for host pool type. Once complete, Select **Next: Virtual Machine**.
+4.  On the Basics page, refer to the following screenshot to fill in the required fields. Selecting **Pooled** for host pool type. Once complete, Select **Next: Virtual Machines**.
+
+- For **Resource Group** select the resource group you created when provisioning the template to create your domain controller
+
+- For **Location** select the Azure Region you selected when provisioning the template to create your domain controller
 
     ![In this blade, enter in the information for the virtual machines that will host the remote apps and select next for workspace.](images/remoteapppool.png)
 
-5.  When you configure **Virtual machine settings**, select **Browse all images and disks** and then select the tab option for **My Items** to select the image that was created.
+5.  Select **Yes** to **Add virtual machines**  When you configure **Virtual machine settings**, select **Browse all images and disks** and then select the tab option for **My Items** then **Shared Images** to select the image that was created.
 
     ![This is where you will find your custom image to add to the host pool.](images/hostpoolcustom.png)
 
-    >**Note**: Selecting this image is very important. You will need the Microsoft 365 for assigning apps in this exercise.
+- **Number of VMs** should be **2**
+
+- **Virtual Network** should match the one created when demploying the domain controller template and should end with wvd1-vnet
+
+**Network Security Group** should be **None**
+
+**Vritual Machine Administrator Account** username should be **locadmin** and the password should match the other passwords used previously
+
+
+>**Note: this is being done for ease of use, please do not do this in production
 
     ![In this blade, enter in the information for the host pool name and select next for virtual machines.](images/nextworkspace.png)
 
