@@ -81,6 +81,8 @@ The system will automatically shut down and disconnect your RDP session.
 
    ![When you search on images, this is the icon that you will need to select.](images/findimage.png)
 
+ - Click **Review and Create** then **Create**
+
 9. On the Overview blade for your image, make note of the **Name** field and **Resource group** field. These attributes are needed when you provision your host pools.
 
    ![This is the information that you need to note for the name and resource group.](images/newimage.png)
