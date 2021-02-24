@@ -40,7 +40,7 @@ In this exercise we will be creating a Windows Virtual Desktop host pool for per
    
 - Select **Browse all images and disks** and then select the tab option for **My Items** then **Shared Images** to select the image that was created.
 
-    ![This is the image that you need for your host pool virtual machine.](images/vmwith365.png)
+    ![This is the image that you need for your host pool virtual machine.](images/hostpoolcustom.png)
 
     ![In this blade, enter in the information for the host pool name and select next for virtual machines.](images/nextworkspace.png)
 
