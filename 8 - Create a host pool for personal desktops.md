@@ -2,7 +2,7 @@
 
 Duration:  30 minutes
 
-In this exercise we will be creating a Windows Virtual Desktop host pool for pooled desktops. This is a set of computers or hosts which operate on an as-needed basis. In a pooled configuration we will be hosting multiple non-persistent sessions, with no user profile information stored locally. This is where FSLogix Profile Containers provide the users profile to the host dynamically. This provides the ability for an organization to fully utilize the compute resources on a single host and lower the total overhead, cost, and number of remote workstations.
+In this exercise we will be creating a Windows Virtual Desktop host pool for personal desktops. 
 
 **Additional Resources**
 
