@@ -1,4 +1,4 @@
-# Step 9: Create a host pool for personal desktops
+# Module 8: Create a host pool for personal desktops
 
 Duration:  30 minutes
 
