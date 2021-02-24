@@ -28,20 +28,28 @@ In this exercise we will be creating a Windows Virtual Desktop host pool for poo
 
     ![Here is where you will enter the information for the host pool.](images/createpersonalhostpool.png "Create host pool page")
 
-5.  On the Virtual Machines page, provision a Virtual machine with the **Windows 10 multi-user + M365 apps**. Once complete, Select **Next: Workspace**.
+5.  Select **Yes** to **Add virtual machines**  When you configure **Virtual machine settings**: 
+
+- **Number of VMs** should be **2**
+
+- **Virtual Network** should match the one created when demploying the domain controller template and should end with wvd1-vnet
+
+- **Network Security Group** should be **None**
+
+- **Vritual Machine Administrator Account** username should be **locadmin** and the password should match the other passwords used previously
    
-6.  For the **Image**, select **Browse all images and disks** and search to find **Windows 10 Enterprise multi-session, Version 1909 + Microsoft 365 Apps** and select that image.
+- For the **Image**, select **Browse all images and disks** and search to find **Windows 10 Enterprise multi-session, Version 20H2 + Microsoft 365 Apps** and select that image.
     >**Note**: Selecting this image is very important. You will need the Microsoft 365 for assigning apps in this exercise.
 
     ![This is the image that you need for your host pool virtual machine.](images/vmwith365.png)
 
     ![In this blade, enter in the information for the host pool name and select next for virtual machines.](images/nextworkspace.png)
 
-7.  On the Workspace page, select **Yes** to register a new desktop app group. Select **Create new** and provide a **Workspace name**. Select **OK** and **Review + create**.
+6.  On the Workspace page, select **Yes** to register a new desktop app group. Select **Create new** and provide a **Workspace name**. Select **OK** and **Review + create**.
 
     ![From the create a host pool workspace tab, enter the required information.](images/hostpoolWorkspace.png "Create a host pool workspace tab")
 
-8.  On the Create a host pool page, Select **Create**.
+7.  On the Create a host pool page, Select **Create**.
 
 ### Task 2: Create a friendly name for the workspace
 
