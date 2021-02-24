@@ -7,7 +7,7 @@ Duration: 30 minutes
 
 1. After the script has completed, select the Window start icon and note that Office, Microsoft Edge Chromium, and Microsoft Teams have been installed.
 
-       ![Here you can view the newly installed applications.](images/newapplications.png)
+     ![Here you can view the newly installed applications.](images/newapplications.png)
 
 2. Once the script has completed execution, complete these final tasks:
 
