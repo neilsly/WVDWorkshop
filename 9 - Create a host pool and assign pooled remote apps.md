@@ -1,4 +1,4 @@
-# Step 11: Create a host pool and assign pooled remote apps.
+# Module 9: Create a host pool and assign pooled remote apps.
 
 Duration:  30 minutes
 

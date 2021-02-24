@@ -1,4 +1,4 @@
-# Step 13 - Connect to WVD using the WVD client
+# Module 11 - Connect to WVD using the WVD client
 
 Duration: 15 minutes
 
