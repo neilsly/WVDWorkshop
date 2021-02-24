@@ -38,8 +38,7 @@ In this exercise we will be creating a Windows Virtual Desktop host pool for per
 
 - **Vritual Machine Administrator Account** username should be **locadmin** and the password should match the other passwords used previously
    
-- For the **Image**, select **Browse all images and disks** and search to find **Windows 10 Enterprise multi-session, Version 20H2 + Microsoft 365 Apps** and select that image.
-    >**Note**: Selecting this image is very important. You will need the Microsoft 365 for assigning apps in this exercise.
+- Select **Browse all images and disks** and then select the tab option for **My Items** then **Shared Images** to select the image that was created.
 
     ![This is the image that you need for your host pool virtual machine.](images/vmwith365.png)
 
