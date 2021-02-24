@@ -46,7 +46,7 @@ In this exercise we will be creating a non-persistent host pool for publishing r
 
 >**Note:** this is being done for ease of use, please do not do this in production
 
-![In this blade, enter in the information for the host pool name and select next for virtual machines.](images/nextworkspace.png)
+![In this blade, enter in the information for the host pool name and select next for virtual machines.](images/createpooledvms.png)
 
 6.  On the Workspace page, select **Yes** to register a new desktop app group. Select **Create new** and provide a **Workspace name**. Select **OK** and **Review + create**.
 
