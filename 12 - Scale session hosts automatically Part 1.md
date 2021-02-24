@@ -12,7 +12,7 @@ In this step, you'll learn about the scaling tool built with the Azure Automatio
 |                                                  |                                                              |
 | ------------------------------------------------ | :----------------------------------------------------------: |
 | Description                                      |                            Links                             |
-| Scale Session Hosts Automatically | https://docs.microsoft.com/en-us/azure/virtual-desktop/publish-apps |
+| Scale Session Hosts Automatically | https://docs.microsoft.com/en-us/azure/virtual-desktop/set-up-scaling-script |
 |                                                  |                                                              |
 
 ## How the scaling tool works
