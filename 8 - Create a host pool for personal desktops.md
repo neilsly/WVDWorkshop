@@ -26,7 +26,7 @@ In this exercise we will be creating a Windows Virtual Desktop host pool for poo
 
 4.  On the Basics page, refer to the following screenshot to fill in the required fields. Once complete, Select **Next: Virtual Machines**.
 
-    ![Here is where you will enter the information for the host pool.](images/createhostpool.png "Create host pool page")
+    ![Here is where you will enter the information for the host pool.](images/createpersonalhostpool.png "Create host pool page")
 
 5.  On the Virtual Machines page, provision a Virtual machine with the **Windows 10 multi-user + M365 apps**. Once complete, Select **Next: Workspace**.
    
