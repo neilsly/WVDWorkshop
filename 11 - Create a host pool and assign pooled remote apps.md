@@ -41,9 +41,9 @@ In this exercise we will be creating a non-persistent host pool for publishing r
 
 - **Virtual Network** should match the one created when demploying the domain controller template and should end with wvd1-vnet
 
-**Network Security Group** should be **None**
+- **Network Security Group** should be **None**
 
-**Vritual Machine Administrator Account** username should be **locadmin** and the password should match the other passwords used previously
+- **Vritual Machine Administrator Account** username should be **locadmin** and the password should match the other passwords used previously
 
 
 >**Note:** this is being done for ease of use, please do not do this in production
