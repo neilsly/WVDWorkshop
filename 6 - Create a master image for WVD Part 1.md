@@ -177,8 +177,10 @@ This will trigger the PowerShell form to launch. Select the appropriate options 
   >**Note**: Update these settings as necessary. The Microsoft recommended settings are pre-selected. If you do not wish to apply these settings to the image, then set each to \'Not Configured\'.
 
 - Select **Install FSLogix Agent** to install the FSLogix Agent. If you select this option, the option to specify the FSLogix User Profile Container VHD Path is enabled. The format for this is the same as your net use command as used in module 4, with \Profiles on the end, for example:
-
+ 
+   ```
    \\mystorageaccount.file.core.windows.net\myfileshare\Profiles
+   ``` 
 
 - Select **Install OneDrive per Machine** to install the OneDrive sync client per machine. If you select this option, it will enable the AAD Tenant ID field. Enter your tenant id here to enable silent Known Folder Move functionality in your image.  [Click here to find your AAD Tenant ID](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-how-to-find-tenant)
 
