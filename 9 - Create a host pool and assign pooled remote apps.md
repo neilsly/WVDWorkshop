@@ -33,9 +33,7 @@ In this exercise we will be creating a non-persistent host pool for publishing r
 
     ![In this blade, enter in the information for the virtual machines that will host the remote apps and select next for workspace.](images/remoteapppool.png)
 
-5.  Select **Yes** to **Add virtual machines**  When you configure **Virtual machine settings**, select **Browse all images and disks** and then select the tab option for **My Items** then **Shared Images** to select the image that was created.
-
-    ![This is where you will find your custom image to add to the host pool.](images/hostpoolcustom.png)
+5.  Select **Yes** to **Add virtual machines**  When you configure **Virtual machine settings**, under **Image** select **Windows 10 Enterprise multi-session, Version 20H2 + Microsoft 365 Apps**
 
 - **Number of VMs** should be **2**
 
