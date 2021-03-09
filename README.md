@@ -46,11 +46,11 @@
 |           | TOTAL                                                        | 240            |
 | **Day 2** |                                                              |                |
 |           | Welcome / Review                                             | 15             |
-| Step 8    | [Create a Master Image (Part 2) (lab)](8%20-%20Create%20a%20master%20image%20for%20WVD%20Part%202.md) | 30             |
-| Step 9    | [Create a hostpool for personal desktops (lab)](9%20-%20Create%20a%20host%20pool%20for%20personal%20desktops.md)                | 30             |
+| Step 6    | [Create a Master Image (Part 2) (lab)](8%20-%20Create%20a%20master%20image%20for%20WVD%20Part%202.md) | 30             |
+| Step 7    | [Create a hostpool for personal desktops (lab)](9%20-%20Create%20a%20host%20pool%20for%20personal%20desktops.md)                | 30             |
 |           | Break / Intermission                                         | 10             |
-| Step 11   | [Create a hostpool and assign pooled remote apps (lab)](11%20-%20Create%20a%20host%20pool%20and%20assign%20pooled%20remote%20apps.md) | 30 |
-| Step 12   | [Connect to WVD using web client (lab)](12%20-%20Connect%20to%20WVD%20using%20web%20client.md)                        | 15             |
-| Step 13   | [Connect to WVD using the WVD client (lab)](13%20-%20Connect%20to%20WVD%20using%20client.md)                                | 15             |
-| Step 15   | [Questions / Wrap Up](15%20-%20Cleanup.md)                                          | 20             |
+| Step 8   | [Create a hostpool and assign pooled remote apps (lab)](11%20-%20Create%20a%20host%20pool%20and%20assign%20pooled%20remote%20apps.md) | 30 |
+| Step 9   | [Connect to WVD using web client (lab)](12%20-%20Connect%20to%20WVD%20using%20web%20client.md)                        | 15             |
+| Step 10   | [Connect to WVD using the WVD client (lab)](13%20-%20Connect%20to%20WVD%20using%20client.md)                                | 15             |
+| Step 11   | [Questions / Wrap Up](15%20-%20Cleanup.md)                                          | 20             |
 |           | TOTAL                                                        | 240            |
