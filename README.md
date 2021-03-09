@@ -36,12 +36,12 @@
 | --------- | ------------------------------------------------------------ | -------------- |
 | **Day 1** | |
 |           | [Intro / Welcome (slides)](WVD%20Tech%20Intensity%20Intro.pptx)                                     | 30             |
-| Step 1    | [Architecture & Infrastructure (lab / discussion)](1%20-%20Deploying%20Azure%20Infrastructure%20and%20AD%20DS.md) | 30             |
+| Step 1    | [Architecture & Infrastructure (lab / discussion)](1%20-%20Deploying%20Azure%20Infrastructure%20and%20AD%20DS.md) | 45             |
 | Step 2    | [Configure Azure AD Connect with ADDS (lab)](2%20-%20Configuring%20Azure%20AD%20Connect%20with%20AD%20DS.md) | 30             |
 | Step 3    | [Create Azure AD groups for WVD (lab)](3%20-%20Create%20Azure%20AD%20groups%20for%20WVD.md) | 15             |
-|           | Break / Intermission                                         | 10             |
+|           | Break / Intermission                                         | 15             |
 | Step 4    | [FS Logix Setup (lab - Optional)](4%20-%20FSLogix%20Setup.md) | 45             |
-| Step 5   | [Create a Master Image (Part 1) (lab)](6%20-%20Create%20a%20master%20image%20for%20WVD%20Part%201.md) | 30             |
+| Step 5   | [Create a Master Image (Part 1) (lab)](6%20-%20Create%20a%20master%20image%20for%20WVD%20Part%201.md) | 45             |
 |           | Questions / Next Steps                                       | 20             |
 |           | TOTAL                                                        | 240            |
 | **Day 2** |                                                              |                |
