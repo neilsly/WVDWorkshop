@@ -201,9 +201,9 @@ In this task we will be completing the steps on the Domain Controller in Azure u
 
 17. Confirm that the feature is enabled.
 
-        ```
-        $storageaccount = Get-AzStorageAccount -ResourceGroupName $ResourceGroupName -Name $StorageAccountName
-        ```
+    ```
+    $storageaccount = Get-AzStorageAccount -ResourceGroupName $ResourceGroupName -Name $StorageAccountName
+    ```
 
 18.  List the directory service of the selected service account.
 
