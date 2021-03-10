@@ -1,4 +1,4 @@
-# Module 10: Connect to WVD with the web client
+# Module 9: Connect to WVD with the web client
 
 Duration:  15 minutes
 
