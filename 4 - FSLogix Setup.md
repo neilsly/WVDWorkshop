@@ -472,8 +472,6 @@ In this task we will create directories for each of the FSLogix profile types an
 
     ![These are the custom permissions for the WVD users on the MSIX folder](images/msixwvdusers.png)
 
-16. Confirm your permissions match the screenshots below.
-
-17. Select **OK** on both property windows to apply your changes.
+16. Select **OK** on both property windows to apply your changes.
 
 Your Azure Files Share is now ready for FSLogix profile containers. Copy the UNC path and add it to your FSLogix deployment (image, GPO, etc..).

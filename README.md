@@ -41,11 +41,11 @@
 | Step 3    | [Create Azure AD groups for WVD (lab)](3%20-%20Create%20Azure%20AD%20groups%20for%20WVD.md) | 15             |
 |           | Break / Intermission                                         | 10             |
 | Step 4    | [FS Logix Setup (lab - Optional)](4%20-%20FSLogix%20Setup.md) | 45             |
-| Step 5   | [Create a Master Image (Part 1) (lab)](5%20-%20Create%20a%20master%20image%20for%20WVD%20Part%201.md) | 45             |
 |           | Questions / Next Steps                                       | 20             |
 |           | TOTAL                                                        | 240            |
 | **Day 2** |                                                              |                |
 |           | Welcome / Review                                             | 15             |
+| Step 5   | [Create a Master Image (Part 1) (lab)](5%20-%20Create%20a%20master%20image%20for%20WVD%20Part%201.md) | 45             |
 | Step 6    | [Create a Master Image (Part 2) (lab)](6%20-%20Create%20a%20master%20image%20for%20WVD%20Part%202.md) | 30             |
 | Step 7    | [Create a hostpool for personal desktops (lab)](7%20-%20Create%20a%20host%20pool%20for%20personal%20desktops.md)                | 30             |
 |           | Break / Intermission                                         | 10             |
@@ -53,4 +53,4 @@
 | Step 9   | [Connect to WVD using web client (lab)](9%20-%20Connect%20to%20WVD%20using%20web%20client.md)                        | 15             |
 | Step 10   | [Connect to WVD using the WVD client (lab)](10%20-%20Connect%20to%20WVD%20using%20client.md)                                | 15             |
 | Step 11   | [Questions / Wrap Up](11%20-%20Cleanup.md)                                          | 20             |
-|           | TOTAL                                                        | 240            |
+|           | TOTAL                                                        | 190           |
