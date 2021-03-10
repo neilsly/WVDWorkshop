@@ -96,8 +96,7 @@ In the new Windows Virtual Desktop ARM portal, we now have the ability to use Az
 
     ![Find manage in the menu and select assignments and add.](images/addassignments.png)
 
-6.  In the fly out, enter **WVD** in the search to find the name of your Azure AD group. In this exercise we will select **WVD Pooled Desktop Users** and **AAD DC Administrators**.
-    >**Note**: AAD DC Administrators will allow you to use your Azure tenant login to access resources in Exercise 7.
+6.  In the fly out, enter **WVD** in the search to find the name of your Azure AD group. In this exercise we will select **WVD Pooled Desktop Users** 
 
     ![Here are the groups that you need to select and save.](images/wvdpooleduseradd.png)
 
