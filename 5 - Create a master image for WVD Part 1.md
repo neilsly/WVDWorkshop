@@ -1,4 +1,4 @@
-# Step 6: Create a master image for WVD (Part 1)
+# Step 5: Create a master image for WVD (Part 1)
 
 Duration:  30 minutes
 
