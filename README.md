@@ -2,7 +2,7 @@
 
 ## Agenda & Schedule
 
-|     | Module                                                       | 
+| Module    | Title                                                       | 
 | --------- | ------------------------------------------------------------ | 
 |           | [Intro / Welcome (slides)](WVD%20Tech%20Intensity%20Intro.pptx)                                     | 
 | Module 1    | [Architecture & Infrastructure (lab / discussion)](1%20-%20Deploying%20Azure%20Infrastructure%20and%20AD%20DS.md) | 
