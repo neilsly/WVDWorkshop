@@ -1,4 +1,4 @@
-# Step 15: Cleanup
+# Module 14: Cleanup
 
 Duration:  20 minutes
 
