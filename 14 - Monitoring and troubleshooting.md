@@ -1,4 +1,4 @@
-# Module 14: Monitoring and Troubleshooting
+# Module 13: Monitoring and Troubleshooting
 
 Duration:  45 minutes
 
