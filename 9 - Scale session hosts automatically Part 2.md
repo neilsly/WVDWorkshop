@@ -1,4 +1,4 @@
-# Module 10 -  Scale session hosts using Azure Automation (Part 2)
+# Module 9 -  Scale session hosts using Azure Automation (Part 2)
 
 Duration: 15 Minutes
 
